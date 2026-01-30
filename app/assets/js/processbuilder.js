@@ -97,6 +97,10 @@ class ProcessBuilder {
             jvmArgs.push('--add-exports', 'java.base/sun.security.util=cpw.mods.securejarhandler')
             jvmArgs.push('--add-exports', 'jdk.naming.dns/com.sun.jndi.dns=java.naming')
 
+            // CORREÇÃO: "Ponte" para permitir que o NeoForge (Módulo) leia o Minecraft (Classpath)
+            jvmArgs.push('--add-reads', 'net.neoforged.fancymodloader.loader=ALL-UNNAMED')
+            jvmArgs.push('--add-reads', 'cpw.mods.modlauncher=ALL-UNNAMED')
+
             // Flags de Suporte Helios e Identificação do Minecraft
             jvmArgs.push(`-Dbootstraplauncher.gamePath=${mcJarPath}`)
             jvmArgs.push(`-Dfml.minecraftJar=${mcJarPath}`)
