@@ -19,7 +19,7 @@ const fetch = require('node-fetch');
 
 
 const latestReleaseUrl = 'https://api.github.com/repos/Bigoras/Launcher-Humble-Pixelmon/releases/latest';
-const token = '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'; // Substitua pelo seu token de acesso pessoal
+const token = ''; // Substitua pelo seu token de acesso pessoal ou use variáveis de ambiente
 
 async function checkForUpdates() {
     if (process.env.OFFLINE_MODE === 'true') {
