@@ -1,0 +1,209 @@
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+
+<div id="landingContainer" style="display: none;">
+
+    <div id="upper">
+        <div id="left">
+
+            <div id="avatarContainer"></div>
+            <div id="FunctionsNavBar">
+                <div class="image-container">
+                    <a href="<%- lang('settings.storeLink') %>"><img class="FirstButtonsNav"
+                            src="assets/images/icons/bag.png" alt="Imagem 1"></a>
+                </div>
+                <div class="image-container">
+                    <a href="<%- lang('settings.wikiLink') %>"><img class="FirstButtonsNav"
+                            src="assets/images/icons/book.png" alt="Imagem 3"></a>
+                </div>
+                <div class="image-container">
+                    <a href="<%- lang('settings.supportLink') %>"><img class="FirstButtonsNav"
+                            src="assets/images/icons/discord1.png" alt="Imagem 2"></a>
+                </div>
+            </div>
+            <div class="image-container2">
+                <button class="mediaButton" id="settingsMediaButton">
+                    <img class="FirstButtonsNav2" src="assets/images/icons/settings.png">
+                </button>
+            </div>
+        </div>
+
+
+
+
+        <div id="right">
+            <div id="navBarSocial">
+                <div id="contentSocial">
+                    <a href="<%- lang('settings.supportLink') %>"><img class="SocialNav"
+                            src="assets/images/icons/discord.png" alt="Imagem 1"></a>
+                    <a href="<%- lang('settings.youtubeLink') %>"><img class="SocialNav"
+                            src="assets/images/icons/youtube.png" alt="Imagem 1"></a>
+                    <a href="<%- lang('settings.instagramLink') %>"><img class="SocialNav"
+                            src="assets/images/icons/instagram.png" alt="Imagem 1"></a>
+                    <a href="<%- lang('settings.tiktokLink') %>"><img class="SocialNav"
+                            src="assets/images/icons/tik-tok.png" alt="Imagem 1"></a>
+                </div>
+                <script src="playerCount.js"></script>
+                <div id="CountPlayerInGame">
+                    <p class="sopraficarlegal"></p>
+
+                </div>
+            </div>
+
+            <script src="launch_button_details.js"></script>
+            <div id="gradiente">
+                <div id="rightContainer">
+                    <div id="MainNotices">
+                        <div id="InfoNotices">
+                            <h1 id="tituloNoticia"></h1>
+                            <p id="descricaoNoticia"></p>
+                            <p id="erroMensagem" style="color: red; display: none;"></p>
+                        </div>
+                        <script src="renderer.js"></script>
+                        <div id="ButtonsNotice">
+                            <a id="linkNoticia" href="https://www.google.com" target="_blank">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="contentLauncherButtons">
+                    <button id="server_selection_button" class="bot_label">&#8226; Nenhum Servidor Selecionado</button>
+                    <button id="launch_button"> &nbsp; <span>INICIAR</span> &nbsp; </button>
+                    <div id="launch_details">
+                        <div id="launch_details_left">
+                            <span style="display: none;" id="launch_progress_label">0%</span>
+                        </div>
+                        <div id="launch_details_right">
+                            <progress style="display: none;" id="launch_progress" value="20" max="100"></progress>
+                            <span style="display: none;" id="launch_details_text" class="bot_label">Aguarde, por
+                                favor...</span>
+                        </div>
+                    </div>
+                </div>
+
+                <script>
+
+                </script>
+
+
+                <div id="mediaContent">
+
+                    <div class="mediaDivider">
+
+                    </div>
+                    <div id="externalMedia">
+                        <div class="mediaContainer">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="lower">
+        <div id="left">
+            <div class="bot_wrapper">
+                <div id="content">
+
+
+                    <div id="mojangStatusWrapper">
+
+
+                        <div id="mojangStatusTooltip">
+
+
+                            <!-- Os serviços essenciais da Mojang são populados aqui. -->
+
+                            <div id="mojangStatusNonEssentialContainer">
+                                <!-- Outros serviços da Mojang são populados aqui. -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="right">
+            <div class="bot_wrapper">
+
+
+            </div>
+        </div>
+    </div>
+    <div id="newsContainer">
+        <div id="newsContent" article="-1" style="display: none;">
+            <div id="newsStatusContainer">
+                <div id="newsStatusContent">
+                    <div id="newsTitleContainer">
+                        <a id="newsArticleTitle" href="#">Lorem Ipsum</a>
+                    </div>
+                    <div id="newsMetaContainer">
+                        <div id="newsArticleDateWrapper">
+                            <span id="newsArticleDate">2023</span>
+                        </div>
+                        <div id="newsArticleAuthorWrapper">
+                            <span id="newsArticleAuthor">por Dimensoes</span>
+                        </div>
+                        <a href="#" id="newsArticleComments">0 Comentários</a>
+                    </div>
+                </div>
+                <div id="newsNavigationContainer">
+                    <button id="newsNavigateLeft">
+                        <svg id="newsNavigationLeftSVG" viewBox="0 0 24.87 13.97">
+                            <defs>
+                                <style>
+                                    .arrowLine {
+                                        fill: none;
+                                        stroke: #000000;
+                                        stroke-width: 2px;
+                                        transition: 0.25s ease;
+                                    }
+                                </style>
+                            </defs>
+                            <polyline class="arrowLine" points="0.71 13.26 12.56 1.41 24.16 13.02" />
+                        </svg>
+                    </button>
+                    <span id="newsNavigationStatus">1 de 1</span>
+                    <button id="newsNavigateRight">
+                        <svg id="newsNavigationRightSVG" viewBox="0 0 24.87 13.97">
+                            <defs>
+                                <style>
+                                    .arrowLine {
+                                        fill: none;
+                                        stroke: #000000;
+                                        stroke-width: 2px;
+                                        transition: 0.25s ease;
+                                    }
+                                </style>
+                            </defs>
+                            <polyline class="arrowLine" points="0.71 13.26 12.56 1.41 24.16 13.02" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div id="newsArticleContainer">
+                <div id="newsArticleContent">
+                    <div id="newsArticleContentScrollable">
+                        <!-- Conteúdo do Artigo -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="newsErrorContainer">
+            <div id="newsErrorLoading">
+                <span id="nELoadSpan" class="newsErrorContent">Verificando Notícias...</span>
+            </div>
+            <div id="newsErrorFailed" style="display: none;">
+                <span id="nEFailedSpan" class="newsErrorContent">Falha ao Carregar Notícias</span>
+                <button id="newsErrorRetry">Tentar Novamente</button>
+            </div>
+            <div id="newsErrorNone" style="display: none;">
+                <span id="nENoneSpan" class="newsErrorContent">Sem Notícias</span>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/scripts/landing.js"></script>
+</div>

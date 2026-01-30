@@ -1,0 +1,18 @@
+node_modules/
+dist/
+build/
+*.log
+.env
+.eslintignore
+.antigravityignore
+
+# Ignorar pastas de distribuição pesadas no código-fonte
+app/assets/mods/
+versions/
+mods/
+*.jar
+*.exe
+
+# Ignorar arquivos de sistema do Windows
+Thumbs.db
+Desktop.ini

@@ -1,0 +1,458 @@
+{
+    "version": "1.0.0",
+    "rss": "<LINK TO RSS FEED>",
+    "discord": {
+        "clientId": "<FILL IN OR REMOVE DISCORD OBJECT>",
+        "smallImageText": "<FILL IN OR REMOVE DISCORD OBJECT>",
+        "smallImageKey": "<FILL IN OR REMOVE DISCORD OBJECT>"
+    },
+    "servers": [
+        {
+            "id": "AvalonCobblemon-1.21.1",
+            "name": "Avalon Cobblemon",
+            "description": "Versão 1.21.1",
+            "icon": "https://i.imgur.com/IaWwYRF.png",
+            "version": "1.0.0",
+            "address": "jogar.avaloncobblemon.com",
+            "minecraftVersion": "1.21.1",
+            "discord": {
+                "shortId": "<FILL IN OR REMOVE DISCORD OBJECT>",
+                "largeImageText": "<FILL IN OR REMOVE DISCORD OBJECT>",
+                "largeImageKey": "<FILL IN OR REMOVE DISCORD OBJECT>"
+            },
+            "mainServer": true,
+            "autoconnect": true,
+            "javaOptions": {
+                "supported": ">=17",
+                "suggestedMajor": 21,
+                "platformOptions": [
+                    {
+                      "platform": "darwin",
+                      "architecture": "arm64",
+                      "distribution": "CORRETTO"
+                    }
+                  ],
+                "ram": {
+                    "recommended": 3072,
+                    "minimum": 2048
+                }
+            },
+            "modules": [
+                {
+                    "id": "net.fabricmc:fabric-loader:0.16.9",
+                    "name": "Fabric (fabric-loader)",
+                    "type": "Fabric",
+                    "artifact": {
+                        "size": 1387357,
+                        "MD5": "27a6ef87676ce6316c777d81c1cd2962",
+                        "url": "http://91.108.125.231/nebula/repo/lib/net/fabricmc/fabric-loader/0.16.9/fabric-loader-0.16.9.jar"
+                    },
+                    "subModules": [
+                        {
+                            "id": "1.21.1-fabric-0.16.9",
+                            "name": "Fabric (version.json)",
+                            "type": "VersionManifest",
+                            "artifact": {
+                                "size": 2857,
+                                "MD5": "417c95760b9d8c02126853c2952abff3",
+                                "url": "http://91.108.125.231/nebula/repo/versions/1.21.1-fabric-0.16.9/1.21.1-fabric-0.16.9.json"
+                            }
+                        },
+                        {
+                            "id": "org.ow2.asm:asm:9.7.1",
+                            "name": "Fabric (asm)",
+                            "type": "Library",
+                            "artifact": {
+                                "size": 126093,
+                                "MD5": "e2cdd32d198ad31427d298eee9d39d8d",
+                                "url": "http://91.108.125.231/nebula/repo/lib/org/ow2/asm/asm/9.7.1/asm-9.7.1.jar"
+                            }
+                        },
+                        {
+                            "id": "org.ow2.asm:asm-analysis:9.7.1",
+                            "name": "Fabric (asm-analysis)",
+                            "type": "Library",
+                            "artifact": {
+                                "size": 35126,
+                                "MD5": "4cd9e7178dfb85371bba3077e40cd514",
+                                "url": "http://91.108.125.231/nebula/repo/lib/org/ow2/asm/asm-analysis/9.7.1/asm-analysis-9.7.1.jar"
+                            }
+                        },
+                        {
+                            "id": "org.ow2.asm:asm-commons:9.7.1",
+                            "name": "Fabric (asm-commons)",
+                            "type": "Library",
+                            "artifact": {
+                                "size": 73459,
+                                "MD5": "8344aea3c8b7d707e9d35a62710e77c9",
+                                "url": "http://91.108.125.231/nebula/repo/lib/org/ow2/asm/asm-commons/9.7.1/asm-commons-9.7.1.jar"
+                            }
+                        },
+                        {
+                            "id": "org.ow2.asm:asm-tree:9.7.1",
+                            "name": "Fabric (asm-tree)",
+                            "type": "Library",
+                            "artifact": {
+                                "size": 51939,
+                                "MD5": "e85029f613b6469989cc7cf53fe06b74",
+                                "url": "http://91.108.125.231/nebula/repo/lib/org/ow2/asm/asm-tree/9.7.1/asm-tree-9.7.1.jar"
+                            }
+                        },
+                        {
+                            "id": "org.ow2.asm:asm-util:9.7.1",
+                            "name": "Fabric (asm-util)",
+                            "type": "Library",
+                            "artifact": {
+                                "size": 94519,
+                                "MD5": "36d373a9cd6cad9b35db9f984c6b4bbb",
+                                "url": "http://91.108.125.231/nebula/repo/lib/org/ow2/asm/asm-util/9.7.1/asm-util-9.7.1.jar"
+                            }
+                        },
+                        {
+                            "id": "net.fabricmc:sponge-mixin:0.15.4+mixin.0.8.7",
+                            "name": "Fabric (sponge-mixin)",
+                            "type": "Library",
+                            "artifact": {
+                                "size": 1494834,
+                                "MD5": "991ca8be2c408fe19eb64014d8a18243",
+                                "url": "http://91.108.125.231/nebula/repo/lib/net/fabricmc/sponge-mixin/0.15.4+mixin.0.8.7/sponge-mixin-0.15.4+mixin.0.8.7.jar"
+                            }
+                        },
+                        {
+                            "id": "net.fabricmc:intermediary:1.21.1",
+                            "name": "Fabric (intermediary)",
+                            "type": "Library",
+                            "artifact": {
+                                "size": 657725,
+                                "MD5": "850be48a3406b9efdf8e64b1c2db97f8",
+                                "url": "http://91.108.125.231/nebula/repo/lib/net/fabricmc/intermediary/1.21.1/intermediary-1.21.1.jar"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "dev.architectury.utils:architectury:13.0.8@jar",
+                    "name": "Architectury",
+                    "type": "FabricMod",
+                    "artifact": {
+                        "size": 600915,
+                        "url": "http://91.108.125.231/nebula/servers/AvalonCobblemon-1.21.1/fabricmods/optionalon/architectury-13.0.8-fabric%20(1).jar",
+                        "MD5": "702e92d09a4855c6c8aa9e738a48efa4"
+                    },
+                    "required": {
+                        "value": false
+                    }
+                },
+                {
+                    "id": "net.blay09.mods.balm:balm-fabric:21.0.23@jar",
+                    "name": "Balm",
+                    "type": "FabricMod",
+                    "artifact": {
+                        "size": 432108,
+                        "url": "http://91.108.125.231/nebula/servers/AvalonCobblemon-1.21.1/fabricmods/optionalon/balm-fabric-1.21.1-21.0.23.jar",
+                        "MD5": "fd3a13a854d90758a9005e42be78e6a9"
+                    },
+                    "required": {
+                        "value": false
+                    }
+                },
+                {
+                    "id": "me.shedaniel.autoconfig.example:cloth-config:15.0.140@jar",
+                    "name": "Cloth Config v15",
+                    "type": "FabricMod",
+                    "artifact": {
+                        "size": 1157166,
+                        "url": "http://91.108.125.231/nebula/servers/AvalonCobblemon-1.21.1/fabricmods/optionalon/cloth-config-15.0.140-fabric%20(1).jar",
+                        "MD5": "a2c091b027ad6ba8e54b07020fd45884"
+                    },
+                    "required": {
+                        "value": false
+                    }
+                },
+                {
+                    "id": "com.cobblemon.mod:cobblemon:1.6.1+1.21.1@jar",
+                    "name": "Cobblemon",
+                    "type": "FabricMod",
+                    "artifact": {
+                        "size": 120710175,
+                        "url": "http://91.108.125.231/nebula/servers/AvalonCobblemon-1.21.1/fabricmods/optionalon/Cobblemon-fabric-1.6.1+1.21.1.jar",
+                        "MD5": "cefe6ab687c39e1a7fe9b2bf96b09188"
+                    },
+                    "required": {
+                        "value": false
+                    }
+                },
+                {
+                    "id": "ca.landonjw:cobblemon-ui-tweaks:1.0.7@jar",
+                    "name": "Cobblemon UI Tweaks",
+                    "type": "FabricMod",
+                    "artifact": {
+                        "size": 64439,
+                        "url": "http://91.108.125.231/nebula/servers/AvalonCobblemon-1.21.1/fabricmods/optionalon/cobblemon-ui-tweaks-1.0.7.jar",
+                        "MD5": "ca8cb2cd9524a22b0c3a643de544e602"
+                    },
+                    "required": {
+                        "value": false
+                    }
+                },
+                {
+                    "id": "com.gitlab.cdagaming:craftpresence:2.5.3@jar",
+                    "name": "CraftPresence",
+                    "type": "FabricMod",
+                    "artifact": {
+                        "size": 2129321,
+                        "url": "http://91.108.125.231/nebula/servers/AvalonCobblemon-1.21.1/fabricmods/required/CraftPresence-2.5.3+1.21.1-fabric.jar",
+                        "MD5": "ce880ff0df893e1b9ee0bb3aed3b928c"
+                    }
+                },
+                {
+                    "id": "net.blay09.mods:defaultoptions:21.1.2@jar",
+                    "name": "Default Options",
+                    "type": "FabricMod",
+                    "artifact": {
+                        "size": 92152,
+                        "url": "http://91.108.125.231/nebula/servers/AvalonCobblemon-1.21.1/fabricmods/optionalon/defaultoptions-fabric-1.21.1-21.1.2.jar",
+                        "MD5": "7e043fa1f4b208bd60986f77b3bc16b7"
+                    },
+                    "required": {
+                        "value": false
+                    }
+                },
+                {
+                    "id": "generated.fabricmod:fabric-api:0.110.0+1.21.1@jar",
+                    "name": "Fabric API",
+                    "type": "FabricMod",
+                    "artifact": {
+                        "size": 2384492,
+                        "url": "http://91.108.125.231/nebula/servers/AvalonCobblemon-1.21.1/fabricmods/optionalon/fabric-api-0.110.0+1.21.1.jar",
+                        "MD5": "ed4a3c972537c1f1f6acf2a69cd60bd8"
+                    },
+                    "required": {
+                        "value": false
+                    }
+                },
+                {
+                    "id": "software.bernie:geckolib:4.7.1@jar",
+                    "name": "GeckoLib 4",
+                    "type": "FabricMod",
+                    "artifact": {
+                        "size": 614003,
+                        "url": "http://91.108.125.231/nebula/servers/AvalonCobblemon-1.21.1/fabricmods/optionalon/geckolib-fabric-1.21.1-4.7.1%20(1).jar",
+                        "MD5": "ea7791edba1a6156a4b71ee9ee24b650"
+                    },
+                    "required": {
+                        "value": false
+                    }
+                },
+                {
+                    "id": "de.dafuqs:globalspawn:2.0.0+1.21@jar",
+                    "name": "GlobalSpawn",
+                    "type": "FabricMod",
+                    "artifact": {
+                        "size": 144661,
+                        "url": "http://91.108.125.231/nebula/servers/AvalonCobblemon-1.21.1/fabricmods/optionalon/globalspawn-2.0.0+1.21%20(1).jar",
+                        "MD5": "aa86c5fe957eafa0aaaf94d991ff168c"
+                    },
+                    "required": {
+                        "value": false
+                    }
+                },
+                {
+                    "id": "generated.fabricmod:iris:1.8.1+mc1.21.1@jar",
+                    "name": "Iris",
+                    "type": "FabricMod",
+                    "artifact": {
+                        "size": 2677842,
+                        "url": "http://91.108.125.231/nebula/servers/AvalonCobblemon-1.21.1/fabricmods/optionalon/iris-fabric-1.8.1+mc1.21.1.jar",
+                        "MD5": "f485ec51b478ca0b4bf86256c1c82964"
+                    },
+                    "required": {
+                        "value": false
+                    }
+                },
+                {
+                    "id": "mezz.jei:jei:19.21.0.247@jar",
+                    "name": "Just Enough Items",
+                    "type": "FabricMod",
+                    "artifact": {
+                        "size": 1474082,
+                        "url": "http://91.108.125.231/nebula/servers/AvalonCobblemon-1.21.1/fabricmods/optionalon/jei-1.21.1-fabric-19.21.0.247.jar",
+                        "MD5": "7712fb0beebc6692c4c1f35e45b8a6f3"
+                    },
+                    "required": {
+                        "value": false
+                    }
+                },
+                {
+                    "id": "me.justahuman:more_cobblemon_tweaks:1.0.2@jar",
+                    "name": "MoreCobblemonTweaks",
+                    "type": "FabricMod",
+                    "artifact": {
+                        "size": 115509,
+                        "url": "http://91.108.125.231/nebula/servers/AvalonCobblemon-1.21.1/fabricmods/optionalon/MoreCobblemonTweaks-fabric-1.0.2.jar",
+                        "MD5": "3f82c76f6df907755b0b2ef954966f1b"
+                    },
+                    "required": {
+                        "value": false
+                    }
+                },
+                {
+                    "id": "generated.fabricmod:noshade:8.0.1@jar",
+                    "name": "NoShade",
+                    "type": "FabricMod",
+                    "artifact": {
+                        "size": 33484,
+                        "url": "http://91.108.125.231/nebula/servers/AvalonCobblemon-1.21.1/fabricmods/optionalon/NoShade-fabric-1.21.1-8.0.1.jar",
+                        "MD5": "68ab38b875b51914907cb63ace83332e"
+                    },
+                    "required": {
+                        "value": false
+                    }
+                },
+                {
+                    "id": "vazkii.patchouli:patchouli:1.21-87-FABRIC@jar",
+                    "name": "Patchouli",
+                    "type": "FabricMod",
+                    "artifact": {
+                        "size": 860661,
+                        "url": "http://91.108.125.231/nebula/servers/AvalonCobblemon-1.21.1/fabricmods/optionalon/Patchouli-1.21-87-FABRIC%20(1).jar",
+                        "MD5": "e6cf65ba82b3c85c64efa607014e8576"
+                    },
+                    "required": {
+                        "value": false
+                    }
+                },
+                {
+                    "id": "net.caffeinemc.mods:sodium:0.6.5+mc1.21.1@jar",
+                    "name": "Sodium",
+                    "type": "FabricMod",
+                    "artifact": {
+                        "size": 1289453,
+                        "url": "http://91.108.125.231/nebula/servers/AvalonCobblemon-1.21.1/fabricmods/optionalon/sodium-fabric-0.6.5+mc1.21.1.jar",
+                        "MD5": "a3e62affdeb8c12331adaa2e1f783ed7"
+                    },
+                    "required": {
+                        "value": false
+                    }
+                },
+                {
+                    "id": "com.gitlab.cdagaming:unilib:1.0.5@jar",
+                    "name": "UniLib",
+                    "type": "FabricMod",
+                    "artifact": {
+                        "size": 1162948,
+                        "url": "http://91.108.125.231/nebula/servers/AvalonCobblemon-1.21.1/fabricmods/required/UniLib-1.0.5+1.21.1-fabric.jar",
+                        "MD5": "69edbe436d1a0545c4bbcdb153c61217"
+                    }
+                },
+                {
+                    "id": "xaero.minimap:xaerominimap:24.7.1@jar",
+                    "name": "Xaero's Minimap",
+                    "type": "FabricMod",
+                    "artifact": {
+                        "size": 1655048,
+                        "url": "http://91.108.125.231/nebula/servers/AvalonCobblemon-1.21.1/fabricmods/optionalon/Xaeros_Minimap_24.7.1_Fabric_1.21.jar",
+                        "MD5": "93baa892721908cffe2079c03892b7eb"
+                    },
+                    "required": {
+                        "value": false
+                    }
+                },
+                {
+                    "id": "xaero.map:xaeroworldmap:1.39.2@jar",
+                    "name": "Xaero's World Map",
+                    "type": "FabricMod",
+                    "artifact": {
+                        "size": 952412,
+                        "url": "http://91.108.125.231/nebula/servers/AvalonCobblemon-1.21.1/fabricmods/optionalon/XaerosWorldMap_1.39.2_Fabric_1.21.jar",
+                        "MD5": "c918de19a70ff5d7509346dc9e09648d"
+                    },
+                    "required": {
+                        "value": false
+                    }
+                },
+                {
+                    "id": "dev.isxander.yacl3.platform:yet_another_config_lib_v3:3.6.2+1.21-fabric@jar",
+                    "name": "YetAnotherConfigLib",
+                    "type": "FabricMod",
+                    "artifact": {
+                        "size": 1108730,
+                        "url": "http://91.108.125.231/nebula/servers/AvalonCobblemon-1.21.1/fabricmods/optionalon/YetAnotherConfigLib-3.6.2+1.21-fabric.jar",
+                        "MD5": "0ba1c37e4aa0091351818b5894e733e4"
+                    },
+                    "required": {
+                        "value": false
+                    }
+                },
+                {
+                    "id": "dev.isxander:zoomify:2.14.2+1.21.1@jar",
+                    "name": "Zoomify",
+                    "type": "FabricMod",
+                    "artifact": {
+                        "size": 807934,
+                        "url": "http://91.108.125.231/nebula/servers/AvalonCobblemon-1.21.1/fabricmods/optionalon/Zoomify-2.14.2+1.21.1.jar",
+                        "MD5": "bcde79e6db9ba2b4077f8b911d5b3aab"
+                    },
+                    "required": {
+                        "value": false
+                    }
+                },
+                {
+                    "id": "craftpresence.json",
+                    "name": "craftpresence.json",
+                    "type": "File",
+                    "artifact": {
+                        "size": 4677,
+                        "url": "http://91.108.125.231/nebula/servers/AvalonCobblemon-1.21.1/files/config/craftpresence.json",
+                        "MD5": "491cc763a46258f594bf291e5a29a2ae",
+                        "path": "config/craftpresence.json"
+                    }
+                },
+                {
+                    "id": "keybindings.txt",
+                    "name": "keybindings.txt",
+                    "type": "File",
+                    "artifact": {
+                        "size": 4801,
+                        "url": "http://91.108.125.231/nebula/servers/AvalonCobblemon-1.21.1/files/config/defaultoptions/keybindings.txt",
+                        "MD5": "dcd8b961504742d4ba2f28c75d9dc281",
+                        "path": "config/defaultoptions/keybindings.txt"
+                    }
+                },
+                {
+                    "id": "options.txt",
+                    "name": "options.txt",
+                    "type": "File",
+                    "artifact": {
+                        "size": 2484,
+                        "url": "http://91.108.125.231/nebula/servers/AvalonCobblemon-1.21.1/files/config/defaultoptions/options.txt",
+                        "MD5": "317e0a782ba8175ca2ab22c01dfb76e5",
+                        "path": "config/defaultoptions/options.txt"
+                    }
+                },
+                {
+                    "id": "servers.dat",
+                    "name": "servers.dat",
+                    "type": "File",
+                    "artifact": {
+                        "size": 87,
+                        "url": "http://91.108.125.231/nebula/servers/AvalonCobblemon-1.21.1/files/servers.dat",
+                        "MD5": "9d6a65737c616768e987863198be30f7",
+                        "path": "servers.dat"
+                    }
+                },
+                {
+                    "id": "fabric-loader-0.16.9-1.21.1.json",
+                    "name": "fabric-loader-0.16.9-1.21.1.json",
+                    "type": "File",
+                    "artifact": {
+                        "size": 2857,
+                        "url": "http://91.108.125.231/nebula/servers/AvalonCobblemon-1.21.1/files/versions/fabric-loader-0.16.9-1.21.1/fabric-loader-0.16.9-1.21.1.json",
+                        "MD5": "66e4ed8e3610bd0d43587fd9a689c819",
+                        "path": "versions/fabric-loader-0.16.9-1.21.1/fabric-loader-0.16.9-1.21.1.json"
+                    }
+                }
+            ]
+        }
+    ]
+}

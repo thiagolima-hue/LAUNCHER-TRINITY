@@ -1,0 +1,23 @@
+# Custom Language File for Launcher Customizer
+
+[ejs.app]
+title = "Humble Pixelmon"
+
+[ejs.landing]
+mediaDiscordURL = "https://discord.gg/GszAYMK4sP"
+mediaYoutubeURL = "https://www.youtube.com/@fraternidadegamer"
+
+[ejs.settings]
+sourceGithubLink = "https://github.com/dscalZi/HeliosLauncher"
+supportLink = "https://discord.gg/humblepixelmon"
+storeLink = "https://www.humblepixelmon.com.br/"
+tiktokLink = "https://www.tiktok.com/@humblepixelmon"
+instagramLink = "https://www.instagram.com/humblepixelmon/"
+twitterLink = ""
+wikiLink = "https://humble.gitbook.io/humble-pixelmon/"
+youtubeLink = "https://www.youtube.com/@HumblePixelmon" 
+
+[ejs.welcome]
+welcomeHeader = "Bem vindo a Humble Pixelmon"
+welcomeDescription = "Inicie uma nova aventura!"
+welcomeDescCTA = ""

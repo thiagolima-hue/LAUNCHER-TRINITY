@@ -1,0 +1,1257 @@
+{
+  "version": "1.0.0",
+  "servers": [
+    {
+      "id": "trinity-pixelmon",
+      "name": "TRINITY PIXELMON",
+      "description": "NeoForge 1.21.1 Pure Migration",
+      "icon": "https://i.imgur.com/pzcZJxC.png",
+      "version": "1.3.0",
+      "address": "enx-cirion-93.enx.host:10005",
+      "host": "enx-cirion-93.enx.host",
+      "hostname": "enx-cirion-93.enx.host",
+      "port": 10005,
+      "minecraftVersion": "1.21.1",
+      "mainServer": true,
+      "autoconnect": false,
+      "javaOptions": {
+        "suggestedMajor": 21,
+        "supported": ">=21"
+      },
+      "modules": [
+        {
+          "id": "net.neoforged:neoforge:21.1.219",
+          "name": "NeoForge 21.1.219",
+          "type": "ForgeHosted",
+          "required": {
+            "value": true,
+            "def": true
+          },
+          "artifact": {
+            "size": 3524551,
+            "MD5": "f7a703bed50fb3cf2e6926a38ec85aa4",
+            "url": "https://maven.neoforged.net/releases/net/neoforged/neoforge/21.1.219/neoforge-21.1.219-universal.jar",
+            "path": "net/neoforged/neoforge/21.1.219/neoforge-21.1.219-universal.jar"
+          },
+          "subModules": [
+            {
+              "id": "neoforge-21.1.219",
+              "name": "NeoForge 21.1.219 Manifest",
+              "type": "VersionManifest",
+              "required": {
+                "value": true,
+                "def": true
+              },
+              "artifact": {
+                "size": 21148,
+                "MD5": "fb75bfae4b8f177f071f742edd0c1299",
+                "url": "https://thiagolima-hue.github.io/LAUNCHER-TRINITY/versions/neoforge-21.1.219.json",
+                "path": "neoforge-21.1.219.json"
+              }
+            },
+            {
+              "id": "net.neoforged.fancymodloader:earlydisplay:4.0.42",
+              "name": "earlydisplay",
+              "type": "Library",
+              "required": {
+                "value": true,
+                "def": true
+              },
+              "artifact": {
+                "size": 261718,
+                "MD5": "00000000000000000000000000000000",
+                "url": "https://maven.neoforged.net/releases/net/neoforged/fancymodloader/earlydisplay/4.0.42/earlydisplay-4.0.42.jar",
+                "path": "net/neoforged/fancymodloader/earlydisplay/4.0.42/earlydisplay-4.0.42.jar"
+              }
+            },
+            {
+              "id": "net.neoforged.fancymodloader:loader:4.0.42",
+              "name": "loader",
+              "type": "Library",
+              "required": {
+                "value": true,
+                "def": true
+              },
+              "artifact": {
+                "size": 504899,
+                "MD5": "00000000000000000000000000000000",
+                "url": "https://maven.neoforged.net/releases/net/neoforged/fancymodloader/loader/4.0.42/loader-4.0.42.jar",
+                "path": "net/neoforged/fancymodloader/loader/4.0.42/loader-4.0.42.jar"
+              }
+            },
+            {
+              "id": "net.neoforged.accesstransformers:at-modlauncher:10.0.1",
+              "name": "at-modlauncher",
+              "type": "Library",
+              "required": {
+                "value": true,
+                "def": true
+              },
+              "artifact": {
+                "size": 2347,
+                "MD5": "00000000000000000000000000000000",
+                "url": "https://maven.neoforged.net/releases/net/neoforged/accesstransformers/at-modlauncher/10.0.1/at-modlauncher-10.0.1.jar",
+                "path": "net/neoforged/accesstransformers/at-modlauncher/10.0.1/at-modlauncher-10.0.1.jar"
+              }
+            },
+            {
+              "id": "net.neoforged:accesstransformers:10.0.1",
+              "name": "accesstransformers",
+              "type": "Library",
+              "required": {
+                "value": true,
+                "def": true
+              },
+              "artifact": {
+                "size": 67234,
+                "MD5": "00000000000000000000000000000000",
+                "url": "https://maven.neoforged.net/releases/net/neoforged/accesstransformers/10.0.1/accesstransformers-10.0.1.jar",
+                "path": "net/neoforged/accesstransformers/10.0.1/accesstransformers-10.0.1.jar"
+              }
+            },
+            {
+              "id": "net.neoforged:bus:8.0.5",
+              "name": "bus",
+              "type": "Library",
+              "required": {
+                "value": true,
+                "def": true
+              },
+              "artifact": {
+                "size": 30340,
+                "MD5": "00000000000000000000000000000000",
+                "url": "https://maven.neoforged.net/releases/net/neoforged/bus/8.0.5/bus-8.0.5.jar",
+                "path": "net/neoforged/bus/8.0.5/bus-8.0.5.jar"
+              }
+            },
+            {
+              "id": "net.neoforged:coremods:7.0.3",
+              "name": "coremods",
+              "type": "Library",
+              "required": {
+                "value": true,
+                "def": true
+              },
+              "artifact": {
+                "size": 22659,
+                "MD5": "00000000000000000000000000000000",
+                "url": "https://maven.neoforged.net/releases/net/neoforged/coremods/7.0.3/coremods-7.0.3.jar",
+                "path": "net/neoforged/coremods/7.0.3/coremods-7.0.3.jar"
+              }
+            },
+            {
+              "id": "cpw.mods:modlauncher:11.0.5",
+              "name": "modlauncher",
+              "type": "Library",
+              "required": {
+                "value": true,
+                "def": true
+              },
+              "artifact": {
+                "size": 116486,
+                "MD5": "00000000000000000000000000000000",
+                "url": "https://maven.neoforged.net/releases/cpw/mods/modlauncher/11.0.5/modlauncher-11.0.5.jar",
+                "path": "cpw/mods/modlauncher/11.0.5/modlauncher-11.0.5.jar"
+              }
+            },
+            {
+              "id": "net.neoforged:mergetool:2.0.0:api",
+              "name": "mergetool",
+              "type": "Library",
+              "required": {
+                "value": true,
+                "def": true
+              },
+              "artifact": {
+                "size": 2550,
+                "MD5": "00000000000000000000000000000000",
+                "url": "https://maven.neoforged.net/releases/net/neoforged/mergetool/2.0.0/mergetool-2.0.0-api.jar",
+                "path": "net/neoforged/mergetool/2.0.0/mergetool-2.0.0-api.jar"
+              }
+            },
+            {
+              "id": "com.electronwill.night-config:toml:3.8.3",
+              "name": "toml",
+              "type": "Library",
+              "required": {
+                "value": true,
+                "def": true
+              },
+              "artifact": {
+                "size": 39516,
+                "MD5": "00000000000000000000000000000000",
+                "url": "https://maven.neoforged.net/releases/com/electronwill/night-config/toml/3.8.3/toml-3.8.3.jar",
+                "path": "com/electronwill/night-config/toml/3.8.3/toml-3.8.3.jar"
+              }
+            },
+            {
+              "id": "com.electronwill.night-config:core:3.8.3",
+              "name": "core",
+              "type": "Library",
+              "required": {
+                "value": true,
+                "def": true
+              },
+              "artifact": {
+                "size": 382911,
+                "MD5": "00000000000000000000000000000000",
+                "url": "https://maven.neoforged.net/releases/com/electronwill/night-config/core/3.8.3/core-3.8.3.jar",
+                "path": "com/electronwill/night-config/core/3.8.3/core-3.8.3.jar"
+              }
+            },
+            {
+              "id": "net.neoforged:JarJarSelector:0.4.1",
+              "name": "JarJarSelector",
+              "type": "Library",
+              "required": {
+                "value": true,
+                "def": true
+              },
+              "artifact": {
+                "size": 17168,
+                "MD5": "00000000000000000000000000000000",
+                "url": "https://maven.neoforged.net/releases/net/neoforged/JarJarSelector/0.4.1/JarJarSelector-0.4.1.jar",
+                "path": "net/neoforged/JarJarSelector/0.4.1/JarJarSelector-0.4.1.jar"
+              }
+            },
+            {
+              "id": "net.neoforged:JarJarMetadata:0.4.1",
+              "name": "JarJarMetadata",
+              "type": "Library",
+              "required": {
+                "value": true,
+                "def": true
+              },
+              "artifact": {
+                "size": 15648,
+                "MD5": "00000000000000000000000000000000",
+                "url": "https://maven.neoforged.net/releases/net/neoforged/JarJarMetadata/0.4.1/JarJarMetadata-0.4.1.jar",
+                "path": "net/neoforged/JarJarMetadata/0.4.1/JarJarMetadata-0.4.1.jar"
+              }
+            },
+            {
+              "id": "org.apache.maven:maven-artifact:3.8.5",
+              "name": "maven-artifact",
+              "type": "Library",
+              "required": {
+                "value": true,
+                "def": true
+              },
+              "artifact": {
+                "size": 58077,
+                "MD5": "00000000000000000000000000000000",
+                "url": "https://maven.neoforged.net/releases/org/apache/maven/maven-artifact/3.8.5/maven-artifact-3.8.5.jar",
+                "path": "org/apache/maven/maven-artifact/3.8.5/maven-artifact-3.8.5.jar"
+              }
+            },
+            {
+              "id": "net.jodah:typetools:0.6.3",
+              "name": "typetools",
+              "type": "Library",
+              "required": {
+                "value": true,
+                "def": true
+              },
+              "artifact": {
+                "size": 18281,
+                "MD5": "00000000000000000000000000000000",
+                "url": "https://maven.neoforged.net/releases/net/jodah/typetools/0.6.3/typetools-0.6.3.jar",
+                "path": "net/jodah/typetools/0.6.3/typetools-0.6.3.jar"
+              }
+            },
+            {
+              "id": "net.minecrell:terminalconsoleappender:1.3.0",
+              "name": "terminalconsoleappender",
+              "type": "Library",
+              "required": {
+                "value": true,
+                "def": true
+              },
+              "artifact": {
+                "size": 16949,
+                "MD5": "00000000000000000000000000000000",
+                "url": "https://maven.neoforged.net/releases/net/minecrell/terminalconsoleappender/1.3.0/terminalconsoleappender-1.3.0.jar",
+                "path": "net/minecrell/terminalconsoleappender/1.3.0/terminalconsoleappender-1.3.0.jar"
+              }
+            },
+            {
+              "id": "net.fabricmc:sponge-mixin:0.15.2+mixin.0.8.7",
+              "name": "sponge-mixin",
+              "type": "Library",
+              "required": {
+                "value": true,
+                "def": true
+              },
+              "artifact": {
+                "size": 1494751,
+                "MD5": "00000000000000000000000000000000",
+                "url": "https://maven.neoforged.net/releases/net/fabricmc/sponge-mixin/0.15.2+mixin.0.8.7/sponge-mixin-0.15.2+mixin.0.8.7.jar",
+                "path": "net/fabricmc/sponge-mixin/0.15.2+mixin.0.8.7/sponge-mixin-0.15.2+mixin.0.8.7.jar"
+              }
+            },
+            {
+              "id": "org.openjdk.nashorn:nashorn-core:15.4",
+              "name": "nashorn-core",
+              "type": "Library",
+              "required": {
+                "value": true,
+                "def": true
+              },
+              "artifact": {
+                "size": 2167292,
+                "MD5": "00000000000000000000000000000000",
+                "url": "https://maven.neoforged.net/releases/org/openjdk/nashorn/nashorn-core/15.4/nashorn-core-15.4.jar",
+                "path": "org/openjdk/nashorn/nashorn-core/15.4/nashorn-core-15.4.jar"
+              }
+            },
+            {
+              "id": "org.apache.commons:commons-lang3:3.14.0",
+              "name": "commons-lang3",
+              "type": "Library",
+              "required": {
+                "value": true,
+                "def": true
+              },
+              "artifact": {
+                "size": 657952,
+                "MD5": "00000000000000000000000000000000",
+                "url": "https://libraries.minecraft.net/org/apache/commons/commons-lang3/3.14.0/commons-lang3-3.14.0.jar",
+                "path": "org/apache/commons/commons-lang3/3.14.0/commons-lang3-3.14.0.jar"
+              }
+            },
+            {
+              "id": "cpw.mods:bootstraplauncher:2.0.2",
+              "name": "bootstraplauncher",
+              "type": "Library",
+              "required": {
+                "value": true,
+                "def": true
+              },
+              "artifact": {
+                "size": 11116,
+                "MD5": "00000000000000000000000000000000",
+                "url": "https://maven.neoforged.net/releases/cpw/mods/bootstraplauncher/2.0.2/bootstraplauncher-2.0.2.jar",
+                "path": "cpw/mods/bootstraplauncher/2.0.2/bootstraplauncher-2.0.2.jar"
+              }
+            },
+            {
+              "id": "cpw.mods:securejarhandler:3.0.8",
+              "name": "securejarhandler",
+              "type": "Library",
+              "required": {
+                "value": true,
+                "def": true
+              },
+              "artifact": {
+                "size": 103765,
+                "MD5": "00000000000000000000000000000000",
+                "url": "https://maven.neoforged.net/releases/cpw/mods/securejarhandler/3.0.8/securejarhandler-3.0.8.jar",
+                "path": "cpw/mods/securejarhandler/3.0.8/securejarhandler-3.0.8.jar"
+              }
+            },
+            {
+              "id": "org.ow2.asm:asm-commons:9.8",
+              "name": "asm-commons",
+              "type": "Library",
+              "required": {
+                "value": true,
+                "def": true
+              },
+              "artifact": {
+                "size": 73498,
+                "MD5": "00000000000000000000000000000000",
+                "url": "https://maven.neoforged.net/releases/org/ow2/asm/asm-commons/9.8/asm-commons-9.8.jar",
+                "path": "org/ow2/asm/asm-commons/9.8/asm-commons-9.8.jar"
+              }
+            },
+            {
+              "id": "org.ow2.asm:asm-util:9.8",
+              "name": "asm-util",
+              "type": "Library",
+              "required": {
+                "value": true,
+                "def": true
+              },
+              "artifact": {
+                "size": 94559,
+                "MD5": "00000000000000000000000000000000",
+                "url": "https://maven.neoforged.net/releases/org/ow2/asm/asm-util/9.8/asm-util-9.8.jar",
+                "path": "org/ow2/asm/asm-util/9.8/asm-util-9.8.jar"
+              }
+            },
+            {
+              "id": "org.ow2.asm:asm-analysis:9.8",
+              "name": "asm-analysis",
+              "type": "Library",
+              "required": {
+                "value": true,
+                "def": true
+              },
+              "artifact": {
+                "size": 35151,
+                "MD5": "00000000000000000000000000000000",
+                "url": "https://maven.neoforged.net/releases/org/ow2/asm/asm-analysis/9.8/asm-analysis-9.8.jar",
+                "path": "org/ow2/asm/asm-analysis/9.8/asm-analysis-9.8.jar"
+              }
+            },
+            {
+              "id": "org.ow2.asm:asm-tree:9.8",
+              "name": "asm-tree",
+              "type": "Library",
+              "required": {
+                "value": true,
+                "def": true
+              },
+              "artifact": {
+                "size": 51934,
+                "MD5": "00000000000000000000000000000000",
+                "url": "https://maven.neoforged.net/releases/org/ow2/asm/asm-tree/9.8/asm-tree-9.8.jar",
+                "path": "org/ow2/asm/asm-tree/9.8/asm-tree-9.8.jar"
+              }
+            },
+            {
+              "id": "org.ow2.asm:asm:9.8",
+              "name": "asm",
+              "type": "Library",
+              "required": {
+                "value": true,
+                "def": true
+              },
+              "artifact": {
+                "size": 126113,
+                "MD5": "00000000000000000000000000000000",
+                "url": "https://maven.neoforged.net/releases/org/ow2/asm/asm/9.8/asm-9.8.jar",
+                "path": "org/ow2/asm/asm/9.8/asm-9.8.jar"
+              }
+            },
+            {
+              "id": "net.neoforged:JarJarFileSystems:0.4.1",
+              "name": "JarJarFileSystems",
+              "type": "Library",
+              "required": {
+                "value": true,
+                "def": true
+              },
+              "artifact": {
+                "size": 31807,
+                "MD5": "00000000000000000000000000000000",
+                "url": "https://maven.neoforged.net/releases/net/neoforged/JarJarFileSystems/0.4.1/JarJarFileSystems-0.4.1.jar",
+                "path": "net/neoforged/JarJarFileSystems/0.4.1/JarJarFileSystems-0.4.1.jar"
+              }
+            },
+            {
+              "id": "net.sf.jopt-simple:jopt-simple:5.0.4",
+              "name": "jopt-simple",
+              "type": "Library",
+              "required": {
+                "value": true,
+                "def": true
+              },
+              "artifact": {
+                "size": 78146,
+                "MD5": "00000000000000000000000000000000",
+                "url": "https://libraries.minecraft.net/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar",
+                "path": "net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar"
+              }
+            },
+            {
+              "id": "org.slf4j:slf4j-api:2.0.9",
+              "name": "slf4j-api",
+              "type": "Library",
+              "required": {
+                "value": true,
+                "def": true
+              },
+              "artifact": {
+                "size": 64579,
+                "MD5": "00000000000000000000000000000000",
+                "url": "https://libraries.minecraft.net/org/slf4j/slf4j-api/2.0.9/slf4j-api-2.0.9.jar",
+                "path": "org/slf4j/slf4j-api/2.0.9/slf4j-api-2.0.9.jar"
+              }
+            },
+            {
+              "id": "org.antlr:antlr4-runtime:4.13.1",
+              "name": "antlr4-runtime",
+              "type": "Library",
+              "required": {
+                "value": true,
+                "def": true
+              },
+              "artifact": {
+                "size": 326305,
+                "MD5": "00000000000000000000000000000000",
+                "url": "https://maven.neoforged.net/releases/org/antlr/antlr4-runtime/4.13.1/antlr4-runtime-4.13.1.jar",
+                "path": "org/antlr/antlr4-runtime/4.13.1/antlr4-runtime-4.13.1.jar"
+              }
+            },
+            {
+              "id": "com.mojang:logging:1.2.7",
+              "name": "logging",
+              "type": "Library",
+              "required": {
+                "value": true,
+                "def": true
+              },
+              "artifact": {
+                "size": 15343,
+                "MD5": "00000000000000000000000000000000",
+                "url": "https://libraries.minecraft.net/com/mojang/logging/1.2.7/logging-1.2.7.jar",
+                "path": "com/mojang/logging/1.2.7/logging-1.2.7.jar"
+              }
+            },
+            {
+              "id": "org.apache.logging.log4j:log4j-slf4j2-impl:2.22.1",
+              "name": "log4j-slf4j2-impl",
+              "type": "Library",
+              "required": {
+                "value": true,
+                "def": true
+              },
+              "artifact": {
+                "size": 27364,
+                "MD5": "00000000000000000000000000000000",
+                "url": "https://libraries.minecraft.net/org/apache/logging/log4j/log4j-slf4j2-impl/2.22.1/log4j-slf4j2-impl-2.22.1.jar",
+                "path": "org/apache/logging/log4j/log4j-slf4j2-impl/2.22.1/log4j-slf4j2-impl-2.22.1.jar"
+              }
+            },
+            {
+              "id": "org.apache.logging.log4j:log4j-core:2.22.1",
+              "name": "log4j-core",
+              "type": "Library",
+              "required": {
+                "value": true,
+                "def": true
+              },
+              "artifact": {
+                "size": 1900022,
+                "MD5": "00000000000000000000000000000000",
+                "url": "https://libraries.minecraft.net/org/apache/logging/log4j/log4j-core/2.22.1/log4j-core-2.22.1.jar",
+                "path": "org/apache/logging/log4j/log4j-core/2.22.1/log4j-core-2.22.1.jar"
+              }
+            },
+            {
+              "id": "org.apache.logging.log4j:log4j-api:2.22.1",
+              "name": "log4j-api",
+              "type": "Library",
+              "required": {
+                "value": true,
+                "def": true
+              },
+              "artifact": {
+                "size": 335001,
+                "MD5": "00000000000000000000000000000000",
+                "url": "https://libraries.minecraft.net/org/apache/logging/log4j/log4j-api/2.22.1/log4j-api-2.22.1.jar",
+                "path": "org/apache/logging/log4j/log4j-api/2.22.1/log4j-api-2.22.1.jar"
+              }
+            },
+            {
+              "id": "org.jline:jline-reader:3.20.0",
+              "name": "jline-reader",
+              "type": "Library",
+              "required": {
+                "value": true,
+                "def": true
+              },
+              "artifact": {
+                "size": 171052,
+                "MD5": "00000000000000000000000000000000",
+                "url": "https://maven.neoforged.net/releases/org/jline/jline-reader/3.20.0/jline-reader-3.20.0.jar",
+                "path": "org/jline/jline-reader/3.20.0/jline-reader-3.20.0.jar"
+              }
+            },
+            {
+              "id": "org.jline:jline-terminal:3.20.0",
+              "name": "jline-terminal",
+              "type": "Library",
+              "required": {
+                "value": true,
+                "def": true
+              },
+              "artifact": {
+                "size": 228481,
+                "MD5": "00000000000000000000000000000000",
+                "url": "https://maven.neoforged.net/releases/org/jline/jline-terminal/3.20.0/jline-terminal-3.20.0.jar",
+                "path": "org/jline/jline-terminal/3.20.0/jline-terminal-3.20.0.jar"
+              }
+            },
+            {
+              "id": "commons-io:commons-io:2.15.1",
+              "name": "commons-io",
+              "type": "Library",
+              "required": {
+                "value": true,
+                "def": true
+              },
+              "artifact": {
+                "size": 501218,
+                "MD5": "00000000000000000000000000000000",
+                "url": "https://libraries.minecraft.net/commons-io/commons-io/2.15.1/commons-io-2.15.1.jar",
+                "path": "commons-io/commons-io/2.15.1/commons-io-2.15.1.jar"
+              }
+            },
+            {
+              "id": "com.google.guava:guava:32.1.2-jre",
+              "name": "guava",
+              "type": "Library",
+              "required": {
+                "value": true,
+                "def": true
+              },
+              "artifact": {
+                "size": 3041591,
+                "MD5": "00000000000000000000000000000000",
+                "url": "https://libraries.minecraft.net/com/google/guava/guava/32.1.2-jre/guava-32.1.2-jre.jar",
+                "path": "com/google/guava/guava/32.1.2-jre/guava-32.1.2-jre.jar"
+              }
+            },
+            {
+              "id": "com.google.guava:failureaccess:1.0.1",
+              "name": "failureaccess",
+              "type": "Library",
+              "required": {
+                "value": true,
+                "def": true
+              },
+              "artifact": {
+                "size": 4617,
+                "MD5": "00000000000000000000000000000000",
+                "url": "https://libraries.minecraft.net/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar",
+                "path": "com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar"
+              }
+            },
+            {
+              "id": "com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava",
+              "name": "listenablefuture",
+              "type": "Library",
+              "required": {
+                "value": true,
+                "def": true
+              },
+              "artifact": {
+                "size": 2199,
+                "MD5": "00000000000000000000000000000000",
+                "url": "https://libraries.minecraft.net/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar",
+                "path": "com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar"
+              }
+            },
+            {
+              "id": "com.google.code.findbugs:jsr305:3.0.2",
+              "name": "jsr305",
+              "type": "Library",
+              "required": {
+                "value": true,
+                "def": true
+              },
+              "artifact": {
+                "size": 19936,
+                "MD5": "00000000000000000000000000000000",
+                "url": "https://libraries.minecraft.net/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar",
+                "path": "com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar"
+              }
+            },
+            {
+              "id": "org.checkerframework:checker-qual:3.33.0",
+              "name": "checker-qual",
+              "type": "Library",
+              "required": {
+                "value": true,
+                "def": true
+              },
+              "artifact": {
+                "size": 223979,
+                "MD5": "00000000000000000000000000000000",
+                "url": "https://libraries.minecraft.net/org/checkerframework/checker-qual/3.33.0/checker-qual-3.33.0.jar",
+                "path": "org/checkerframework/checker-qual/3.33.0/checker-qual-3.33.0.jar"
+              }
+            },
+            {
+              "id": "com.google.errorprone:error_prone_annotations:2.18.0",
+              "name": "error_prone_annotations",
+              "type": "Library",
+              "required": {
+                "value": true,
+                "def": true
+              },
+              "artifact": {
+                "size": 16017,
+                "MD5": "00000000000000000000000000000000",
+                "url": "https://libraries.minecraft.net/com/google/errorprone/error_prone_annotations/2.18.0/error_prone_annotations-2.18.0.jar",
+                "path": "com/google/errorprone/error_prone_annotations/2.18.0/error_prone_annotations-2.18.0.jar"
+              }
+            },
+            {
+              "id": "com.google.j2objc:j2objc-annotations:2.8",
+              "name": "j2objc-annotations",
+              "type": "Library",
+              "required": {
+                "value": true,
+                "def": true
+              },
+              "artifact": {
+                "size": 9301,
+                "MD5": "00000000000000000000000000000000",
+                "url": "https://libraries.minecraft.net/com/google/j2objc/j2objc-annotations/2.8/j2objc-annotations-2.8.jar",
+                "path": "com/google/j2objc/j2objc-annotations/2.8/j2objc-annotations-2.8.jar"
+              }
+            },
+            {
+              "id": "com.google.code.gson:gson:2.10.1",
+              "name": "gson",
+              "type": "Library",
+              "required": {
+                "value": true,
+                "def": true
+              },
+              "artifact": {
+                "size": 283367,
+                "MD5": "00000000000000000000000000000000",
+                "url": "https://libraries.minecraft.net/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar",
+                "path": "com/google/code/gson/gson/2.10.1/gson-2.10.1.jar"
+              }
+            },
+            {
+              "id": "org.codehaus.plexus:plexus-utils:3.3.0",
+              "name": "plexus-utils",
+              "type": "Library",
+              "required": {
+                "value": true,
+                "def": true
+              },
+              "artifact": {
+                "size": 263253,
+                "MD5": "00000000000000000000000000000000",
+                "url": "https://maven.neoforged.net/releases/org/codehaus/plexus/plexus-utils/3.3.0/plexus-utils-3.3.0.jar",
+                "path": "org/codehaus/plexus/plexus-utils/3.3.0/plexus-utils-3.3.0.jar"
+              }
+            },
+            {
+              "id": "com.machinezoo.noexception:noexception:1.7.1",
+              "name": "noexception",
+              "type": "Library",
+              "required": {
+                "value": true,
+                "def": true
+              },
+              "artifact": {
+                "size": 250861,
+                "MD5": "00000000000000000000000000000000",
+                "url": "https://maven.neoforged.net/releases/com/machinezoo/noexception/noexception/1.7.1/noexception-1.7.1.jar",
+                "path": "com/machinezoo/noexception/noexception/1.7.1/noexception-1.7.1.jar"
+              }
+            }
+          ]
+        },
+        {
+          "id": "local.mod:appleskin-neoforge-mc1.21-3.0.7:1.0.0",
+          "name": "appleskin-neoforge-mc1.21-3.0.7.jar",
+          "type": "ForgeMod",
+          "required": {
+            "value": true,
+            "def": true
+          },
+          "artifact": {
+            "size": 74100,
+            "MD5": "9b6a8681aa9c871a8816a39d614034c6",
+            "url": "https://thiagolima-hue.github.io/LAUNCHER-TRINITY/mods/appleskin-neoforge-mc1.21-3.0.7.jar",
+            "path": "mods/appleskin-neoforge-mc1.21-3.0.7.jar"
+          }
+        },
+        {
+          "id": "local.mod:athena-neoforge-1.21-4.0.2:1.0.0",
+          "name": "athena-neoforge-1.21-4.0.2.jar",
+          "type": "ForgeMod",
+          "required": {
+            "value": true,
+            "def": true
+          },
+          "artifact": {
+            "size": 92698,
+            "MD5": "26eec9eab46ad442f811b163b5bcb6fe",
+            "url": "https://thiagolima-hue.github.io/LAUNCHER-TRINITY/mods/athena-neoforge-1.21-4.0.2.jar",
+            "path": "mods/athena-neoforge-1.21-4.0.2.jar"
+          }
+        },
+        {
+          "id": "local.mod:balm-neoforge-1.21.1-21.0.56:1.0.0",
+          "name": "balm-neoforge-1.21.1-21.0.56.jar",
+          "type": "ForgeMod",
+          "required": {
+            "value": true,
+            "def": true
+          },
+          "artifact": {
+            "size": 739709,
+            "MD5": "7ab16721c9a8bb96666233d8ef46b47d",
+            "url": "https://thiagolima-hue.github.io/LAUNCHER-TRINITY/mods/balm-neoforge-1.21.1-21.0.56.jar",
+            "path": "mods/balm-neoforge-1.21.1-21.0.56.jar"
+          }
+        },
+        {
+          "id": "local.mod:chipped-neoforge-1.21.1-4.0.2:1.0.0",
+          "name": "chipped-neoforge-1.21.1-4.0.2.jar",
+          "type": "ForgeMod",
+          "required": {
+            "value": true,
+            "def": true
+          },
+          "artifact": {
+            "size": 15020578,
+            "MD5": "f8fd65f72a903abd0bcbd3bf6bc09524",
+            "url": "https://thiagolima-hue.github.io/LAUNCHER-TRINITY/mods/chipped-neoforge-1.21.1-4.0.2.jar",
+            "path": "mods/chipped-neoforge-1.21.1-4.0.2.jar"
+          }
+        },
+        {
+          "id": "local.mod:chisel_chipped_integration-v1.3.9-1.21.1:1.0.0",
+          "name": "chisel_chipped_integration-v1.3.9-1.21.1.jar",
+          "type": "ForgeMod",
+          "required": {
+            "value": true,
+            "def": true
+          },
+          "artifact": {
+            "size": 2874301,
+            "MD5": "bbbaa8cc9cce3b242cc8ad32991493ff",
+            "url": "https://thiagolima-hue.github.io/LAUNCHER-TRINITY/mods/chisel_chipped_integration-v1.3.9-1.21.1.jar",
+            "path": "mods/chisel_chipped_integration-v1.3.9-1.21.1.jar"
+          }
+        },
+        {
+          "id": "local.mod:cloth-config-15.0.140-neoforge:1.0.0",
+          "name": "cloth-config-15.0.140-neoforge.jar",
+          "type": "ForgeMod",
+          "required": {
+            "value": true,
+            "def": true
+          },
+          "artifact": {
+            "size": 1163890,
+            "MD5": "4c3757160403fcccb8ad468c2ea22862",
+            "url": "https://thiagolima-hue.github.io/LAUNCHER-TRINITY/mods/cloth-config-15.0.140-neoforge.jar",
+            "path": "mods/cloth-config-15.0.140-neoforge.jar"
+          }
+        },
+        {
+          "id": "local.mod:Clumps-neoforge-1.21.1-19.0.0.1:1.0.0",
+          "name": "Clumps-neoforge-1.21.1-19.0.0.1.jar",
+          "type": "ForgeMod",
+          "required": {
+            "value": true,
+            "def": true
+          },
+          "artifact": {
+            "size": 18382,
+            "MD5": "8b42a9d7a72bde90fa061d17e2859e7b",
+            "url": "https://thiagolima-hue.github.io/LAUNCHER-TRINITY/mods/Clumps-neoforge-1.21.1-19.0.0.1.jar",
+            "path": "mods/Clumps-neoforge-1.21.1-19.0.0.1.jar"
+          }
+        },
+        {
+          "id": "local.mod:cosmeticarmorreworked-1.21.1-v1-neoforge:1.0.0",
+          "name": "cosmeticarmorreworked-1.21.1-v1-neoforge.jar",
+          "type": "ForgeMod",
+          "required": {
+            "value": true,
+            "def": true
+          },
+          "artifact": {
+            "size": 92722,
+            "MD5": "881eb025d54ca01165c115a38a8d48c4",
+            "url": "https://thiagolima-hue.github.io/LAUNCHER-TRINITY/mods/cosmeticarmorreworked-1.21.1-v1-neoforge.jar",
+            "path": "mods/cosmeticarmorreworked-1.21.1-v1-neoforge.jar"
+          }
+        },
+        {
+          "id": "local.mod:CustomNPCs-Unofficial-NeoForge-1.21.1.20251230:1.0.0",
+          "name": "CustomNPCs-Unofficial-NeoForge-1.21.1.20251230.jar",
+          "type": "ForgeMod",
+          "required": {
+            "value": true,
+            "def": true
+          },
+          "artifact": {
+            "size": 10789250,
+            "MD5": "34f52ed3b674bb956b7a0d7f6967c00f",
+            "url": "https://thiagolima-hue.github.io/LAUNCHER-TRINITY/mods/CustomNPCs-Unofficial-NeoForge-1.21.1.20251230.jar",
+            "path": "mods/CustomNPCs-Unofficial-NeoForge-1.21.1.20251230.jar"
+          }
+        },
+        {
+          "id": "local.mod:emotecraft-for-MC1.21.1-2.4.12-neoforge:1.0.0",
+          "name": "emotecraft-for-MC1.21.1-2.4.12-neoforge.jar",
+          "type": "ForgeMod",
+          "required": {
+            "value": true,
+            "def": true
+          },
+          "artifact": {
+            "size": 861829,
+            "MD5": "c4840725c74865e2ba95807396c66a4f",
+            "url": "https://thiagolima-hue.github.io/LAUNCHER-TRINITY/mods/emotecraft-for-MC1.21.1-2.4.12-neoforge.jar",
+            "path": "mods/emotecraft-for-MC1.21.1-2.4.12-neoforge.jar"
+          }
+        },
+        {
+          "id": "local.mod:FallingTree-1.21.1-1.21.1.11:1.0.0",
+          "name": "FallingTree-1.21.1-1.21.1.11.jar",
+          "type": "ForgeMod",
+          "required": {
+            "value": true,
+            "def": true
+          },
+          "artifact": {
+            "size": 496356,
+            "MD5": "7318bdea54e4c69c1c90650b30fc4bde",
+            "url": "https://thiagolima-hue.github.io/LAUNCHER-TRINITY/mods/FallingTree-1.21.1-1.21.1.11.jar",
+            "path": "mods/FallingTree-1.21.1-1.21.1.11.jar"
+          }
+        },
+        {
+          "id": "local.mod:fastleafdecay-35:1.0.0",
+          "name": "fastleafdecay-35.jar",
+          "type": "ForgeMod",
+          "required": {
+            "value": true,
+            "def": true
+          },
+          "artifact": {
+            "size": 9511,
+            "MD5": "97223075d6407a012024fd7e3c48e5e8",
+            "url": "https://thiagolima-hue.github.io/LAUNCHER-TRINITY/mods/fastleafdecay-35.jar",
+            "path": "mods/fastleafdecay-35.jar"
+          }
+        },
+        {
+          "id": "local.mod:fusion-1.2.12-neoforge-mc1.21.1:1.0.0",
+          "name": "fusion-1.2.12-neoforge-mc1.21.1.jar",
+          "type": "ForgeMod",
+          "required": {
+            "value": true,
+            "def": true
+          },
+          "artifact": {
+            "size": 532912,
+            "MD5": "222533487d6b22b6ba685535f8166584",
+            "url": "https://thiagolima-hue.github.io/LAUNCHER-TRINITY/mods/fusion-1.2.12-neoforge-mc1.21.1.jar",
+            "path": "mods/fusion-1.2.12-neoforge-mc1.21.1.jar"
+          }
+        },
+        {
+          "id": "local.mod:invtweaks-1.21.1-1.3.2:1.0.0",
+          "name": "invtweaks-1.21.1-1.3.2.jar",
+          "type": "ForgeMod",
+          "required": {
+            "value": true,
+            "def": true
+          },
+          "artifact": {
+            "size": 77127,
+            "MD5": "517c295727152fc16f55ae5071eecd31",
+            "url": "https://thiagolima-hue.github.io/LAUNCHER-TRINITY/mods/invtweaks-1.21.1-1.3.2.jar",
+            "path": "mods/invtweaks-1.21.1-1.3.2.jar"
+          }
+        },
+        {
+          "id": "local.mod:iris-neoforge-1.8.12_mc1.21.1:1.0.0",
+          "name": "iris-neoforge-1.8.12+mc1.21.1.jar",
+          "type": "ForgeMod",
+          "required": {
+            "value": true,
+            "def": true
+          },
+          "artifact": {
+            "size": 2438548,
+            "MD5": "6c1122aa7c2b1a4f24831e394c5b513f",
+            "url": "https://thiagolima-hue.github.io/LAUNCHER-TRINITY/mods/iris-neoforge-1.8.12+mc1.21.1.jar",
+            "path": "mods/iris-neoforge-1.8.12+mc1.21.1.jar"
+          }
+        },
+        {
+          "id": "local.mod:Jade-1.21.1-NeoForge-15.10.3:1.0.0",
+          "name": "Jade-1.21.1-NeoForge-15.10.3.jar",
+          "type": "ForgeMod",
+          "required": {
+            "value": true,
+            "def": true
+          },
+          "artifact": {
+            "size": 725736,
+            "MD5": "4c3891e2160079f270029c004ba3f562",
+            "url": "https://thiagolima-hue.github.io/LAUNCHER-TRINITY/mods/Jade-1.21.1-NeoForge-15.10.3.jar",
+            "path": "mods/Jade-1.21.1-NeoForge-15.10.3.jar"
+          }
+        },
+        {
+          "id": "local.mod:jei-1.21.1-neoforge-19.27.0.336:1.0.0",
+          "name": "jei-1.21.1-neoforge-19.27.0.336.jar",
+          "type": "ForgeMod",
+          "required": {
+            "value": true,
+            "def": true
+          },
+          "artifact": {
+            "size": 1529192,
+            "MD5": "d3da422d1a44e31af8a8d036b3d338f7",
+            "url": "https://thiagolima-hue.github.io/LAUNCHER-TRINITY/mods/jei-1.21.1-neoforge-19.27.0.336.jar",
+            "path": "mods/jei-1.21.1-neoforge-19.27.0.336.jar"
+          }
+        },
+        {
+          "id": "local.mod:journeymap-neoforge-1.21.1-6.0.0-beta.53:1.0.0",
+          "name": "journeymap-neoforge-1.21.1-6.0.0-beta.53.jar",
+          "type": "ForgeMod",
+          "required": {
+            "value": true,
+            "def": true
+          },
+          "artifact": {
+            "size": 3538766,
+            "MD5": "78a5a8cb98b346291857628580c936e9",
+            "url": "https://thiagolima-hue.github.io/LAUNCHER-TRINITY/mods/journeymap-neoforge-1.21.1-6.0.0-beta.53.jar",
+            "path": "mods/journeymap-neoforge-1.21.1-6.0.0-beta.53.jar"
+          }
+        },
+        {
+          "id": "local.mod:MouseTweaks-neoforge-mc1.21-2.26.1:1.0.0",
+          "name": "MouseTweaks-neoforge-mc1.21-2.26.1.jar",
+          "type": "ForgeMod",
+          "required": {
+            "value": true,
+            "def": true
+          },
+          "artifact": {
+            "size": 73938,
+            "MD5": "4ab6e808a59fdebecfbc92438b85b470",
+            "url": "https://thiagolima-hue.github.io/LAUNCHER-TRINITY/mods/MouseTweaks-neoforge-mc1.21-2.26.1.jar",
+            "path": "mods/MouseTweaks-neoforge-mc1.21-2.26.1.jar"
+          }
+        },
+        {
+          "id": "local.mod:notenoughcrashes-neoforge-4.4.9_1.21.1:1.0.0",
+          "name": "notenoughcrashes-neoforge-4.4.9+1.21.1.jar",
+          "type": "ForgeMod",
+          "required": {
+            "value": true,
+            "def": true
+          },
+          "artifact": {
+            "size": 598916,
+            "MD5": "4df2c897cdb93e4978977afac9d97a70",
+            "url": "https://thiagolima-hue.github.io/LAUNCHER-TRINITY/mods/notenoughcrashes-neoforge-4.4.9+1.21.1.jar",
+            "path": "mods/notenoughcrashes-neoforge-4.4.9+1.21.1.jar"
+          }
+        },
+        {
+          "id": "local.mod:pixelinformationjade-0.0.1:1.0.0",
+          "name": "pixelinformationjade-0.0.1.jar",
+          "type": "ForgeMod",
+          "required": {
+            "value": true,
+            "def": true
+          },
+          "artifact": {
+            "size": 22169,
+            "MD5": "73fdeb8bbdde36fb90d9b06a9164081e",
+            "url": "https://thiagolima-hue.github.io/LAUNCHER-TRINITY/mods/pixelinformationjade-0.0.1.jar",
+            "path": "mods/pixelinformationjade-0.0.1.jar"
+          }
+        },
+        {
+          "id": "local.mod:Pixelmon-1.21.1-9.3.14-universal:1.0.0",
+          "name": "Pixelmon-1.21.1-9.3.14-universal.jar",
+          "type": "ForgeMod",
+          "required": {
+            "value": true,
+            "def": true
+          },
+          "artifact": {
+            "size": 392190454,
+            "MD5": "16b4735ab6775939fd085a4a9c5f60a1",
+            "url": "https://www.curseforge.com/minecraft/mc-mods/pixelmon/download/7454376",
+            "path": "mods/Pixelmon-1.21.1-9.3.14-universal.jar"
+          }
+        },
+        {
+          "id": "local.mod:rechiseled-1.1.6a-neoforge-mc1.21:1.0.0",
+          "name": "rechiseled-1.1.6a-neoforge-mc1.21.jar",
+          "type": "ForgeMod",
+          "required": {
+            "value": true,
+            "def": true
+          },
+          "artifact": {
+            "size": 3484553,
+            "MD5": "c27772e602930ff3609c91f583d09815",
+            "url": "https://thiagolima-hue.github.io/LAUNCHER-TRINITY/mods/rechiseled-1.1.6a-neoforge-mc1.21.jar",
+            "path": "mods/rechiseled-1.1.6a-neoforge-mc1.21.jar"
+          }
+        },
+        {
+          "id": "local.mod:rechiseled_chipped-1.4.1-1.21.1:1.0.0",
+          "name": "rechiseled_chipped-1.4.1-1.21.1.jar",
+          "type": "ForgeMod",
+          "required": {
+            "value": true,
+            "def": true
+          },
+          "artifact": {
+            "size": 194402,
+            "MD5": "bafdf3d02045a4f066cfd35f19286c77",
+            "url": "https://thiagolima-hue.github.io/LAUNCHER-TRINITY/mods/rechiseled_chipped-1.4.1-1.21.1.jar",
+            "path": "mods/rechiseled_chipped-1.4.1-1.21.1.jar"
+          }
+        },
+        {
+          "id": "local.mod:resourcefullib-neoforge-1.21-3.0.12:1.0.0",
+          "name": "resourcefullib-neoforge-1.21-3.0.12.jar",
+          "type": "ForgeMod",
+          "required": {
+            "value": true,
+            "def": true
+          },
+          "artifact": {
+            "size": 484332,
+            "MD5": "32da88903167d24bb20febeeb2c79225",
+            "url": "https://thiagolima-hue.github.io/LAUNCHER-TRINITY/mods/resourcefullib-neoforge-1.21-3.0.12.jar",
+            "path": "mods/resourcefullib-neoforge-1.21-3.0.12.jar"
+          }
+        },
+        {
+          "id": "local.mod:smoothboot-1.0:1.0.0",
+          "name": "smoothboot-1.0.jar",
+          "type": "ForgeMod",
+          "required": {
+            "value": true,
+            "def": true
+          },
+          "artifact": {
+            "size": 16821,
+            "MD5": "2994061c02eab0adf75229802ec3a93c",
+            "url": "https://thiagolima-hue.github.io/LAUNCHER-TRINITY/mods/smoothboot-1.0.jar",
+            "path": "mods/smoothboot-1.0.jar"
+          }
+        },
+        {
+          "id": "local.mod:sodium-neoforge-0.6.13_mc1.21.1:1.0.0",
+          "name": "sodium-neoforge-0.6.13+mc1.21.1.jar",
+          "type": "ForgeMod",
+          "required": {
+            "value": true,
+            "def": true
+          },
+          "artifact": {
+            "size": 1162994,
+            "MD5": "e5018c782d851fea76be0205b7616e5d",
+            "url": "https://thiagolima-hue.github.io/LAUNCHER-TRINITY/mods/sodium-neoforge-0.6.13+mc1.21.1.jar",
+            "path": "mods/sodium-neoforge-0.6.13+mc1.21.1.jar"
+          }
+        },
+        {
+          "id": "local.mod:sophisticatedbackpacks-1.21.1-3.25.24.1499:1.0.0",
+          "name": "sophisticatedbackpacks-1.21.1-3.25.24.1499.jar",
+          "type": "ForgeMod",
+          "required": {
+            "value": true,
+            "def": true
+          },
+          "artifact": {
+            "size": 986581,
+            "MD5": "4108f82d138f63717725bda94ec34e4f",
+            "url": "https://thiagolima-hue.github.io/LAUNCHER-TRINITY/mods/sophisticatedbackpacks-1.21.1-3.25.24.1499.jar",
+            "path": "mods/sophisticatedbackpacks-1.21.1-3.25.24.1499.jar"
+          }
+        },
+        {
+          "id": "local.mod:sophisticatedcore-1.21.1-1.3.106.1419:1.0.0",
+          "name": "sophisticatedcore-1.21.1-1.3.106.1419.jar",
+          "type": "ForgeMod",
+          "required": {
+            "value": true,
+            "def": true
+          },
+          "artifact": {
+            "size": 1453928,
+            "MD5": "679ff923691ee4aa67e6dc1ec0aca238",
+            "url": "https://thiagolima-hue.github.io/LAUNCHER-TRINITY/mods/sophisticatedcore-1.21.1-1.3.106.1419.jar",
+            "path": "mods/sophisticatedcore-1.21.1-1.3.106.1419.jar"
+          }
+        },
+        {
+          "id": "local.mod:supermartijn642configlib-1.1.8-neoforge-mc1.21:1.0.0",
+          "name": "supermartijn642configlib-1.1.8-neoforge-mc1.21.jar",
+          "type": "ForgeMod",
+          "required": {
+            "value": true,
+            "def": true
+          },
+          "artifact": {
+            "size": 207514,
+            "MD5": "0428149c5db7bad43d75e6f758f47678",
+            "url": "https://thiagolima-hue.github.io/LAUNCHER-TRINITY/mods/supermartijn642configlib-1.1.8-neoforge-mc1.21.jar",
+            "path": "mods/supermartijn642configlib-1.1.8-neoforge-mc1.21.jar"
+          }
+        },
+        {
+          "id": "local.mod:supermartijn642corelib-1.1.19-neoforge-mc1.21:1.0.0",
+          "name": "supermartijn642corelib-1.1.19-neoforge-mc1.21.jar",
+          "type": "ForgeMod",
+          "required": {
+            "value": true,
+            "def": true
+          },
+          "artifact": {
+            "size": 519542,
+            "MD5": "730d5b120e7148b15af94a9fd378060a",
+            "url": "https://thiagolima-hue.github.io/LAUNCHER-TRINITY/mods/supermartijn642corelib-1.1.19-neoforge-mc1.21.jar",
+            "path": "mods/supermartijn642corelib-1.1.19-neoforge-mc1.21.jar"
+          }
+        },
+        {
+          "id": "local.mod:trashslot-neoforge-1.21.1-21.1.4:1.0.0",
+          "name": "trashslot-neoforge-1.21.1-21.1.4.jar",
+          "type": "ForgeMod",
+          "required": {
+            "value": true,
+            "def": true
+          },
+          "artifact": {
+            "size": 123189,
+            "MD5": "ecaf023c276ce3e4c3faee79a6a820f8",
+            "url": "https://thiagolima-hue.github.io/LAUNCHER-TRINITY/mods/trashslot-neoforge-1.21.1-21.1.4.jar",
+            "path": "mods/trashslot-neoforge-1.21.1-21.1.4.jar"
+          }
+        },
+        {
+          "id": "local.mod:trinityclient-1.0-SNAPSHOT:1.0.0",
+          "name": "trinityclient-1.0-SNAPSHOT.jar",
+          "type": "ForgeMod",
+          "required": {
+            "value": true,
+            "def": true
+          },
+          "artifact": {
+            "size": 6184223,
+            "MD5": "6e0ae5ca722482d67f7d8d70af0a9875",
+            "url": "https://thiagolima-hue.github.io/LAUNCHER-TRINITY/mods/trinityclient-1.0-SNAPSHOT.jar",
+            "path": "mods/trinityclient-1.0-SNAPSHOT.jar"
+          }
+        },
+        {
+          "id": "local.mod:voicechat-neoforge-1.21.1-2.6.11:1.0.0",
+          "name": "voicechat-neoforge-1.21.1-2.6.11.jar",
+          "type": "ForgeMod",
+          "required": {
+            "value": true,
+            "def": true
+          },
+          "artifact": {
+            "size": 4890462,
+            "MD5": "6348bb7afabdea396e0b59c8d7dca16f",
+            "url": "https://thiagolima-hue.github.io/LAUNCHER-TRINITY/mods/voicechat-neoforge-1.21.1-2.6.11.jar",
+            "path": "mods/voicechat-neoforge-1.21.1-2.6.11.jar"
+          }
+        }
+      ]
+    }
+  ]
+}
