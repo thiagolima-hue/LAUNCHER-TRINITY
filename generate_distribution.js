@@ -95,7 +95,7 @@ async function generate() {
 
     // INJEÇÃO DO CLIENT.JAR (DENTRO DO ESCOPO)
     neoforgeModule.subModules.push({
-        id: "minecraft-client-jar",
+        id: "com.mojang:minecraft-client:1.21.1",
         name: "Minecraft Client",
         type: "Library",
         required: { value: true, def: true },

@@ -743,7 +743,7 @@
               }
             },
             {
-              "id": "minecraft-client-jar",
+              "id": "com.mojang:minecraft-client:1.21.1",
               "name": "Minecraft Client",
               "type": "Library",
               "required": {
