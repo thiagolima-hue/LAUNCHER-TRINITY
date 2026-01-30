@@ -43,8 +43,8 @@
                 "def": true
               },
               "artifact": {
-                "size": 22072,
-                "MD5": "5dff4ad57db72f236824bcd9253a0250",
+                "size": 21148,
+                "MD5": "fb75bfae4b8f177f071f742edd0c1299",
                 "url": "https://raw.githubusercontent.com/thiagolima-hue/LAUNCHER-TRINITY/main/versions/neoforge-21.1.219.json",
                 "path": "neoforge-21.1.219.json"
               }
@@ -748,8 +748,8 @@
                 "def": true
               },
               "artifact": {
-                "size": 526715,
-                "MD5": "3F43262B8C492966BD170E4B78F313FE",
+                "size": 1683830,
+                "MD5": "3f43262b8c492966bd170e4b78f313fe",
                 "url": "https://www.dropbox.com/scl/fi/6mf8tv93zt03ef67msvwz/neoform-1.21.1-20240808.144430.zip?rlkey=x8w8xyutc9my2fra6ybppfro8&st=wyad5ky8&dl=1",
                 "path": "net/neoforged/neoform/1.21.1-20240808.144430/neoform-1.21.1-20240808.144430.zip"
               }
@@ -763,7 +763,7 @@
                 "def": true
               },
               "artifact": {
-                "size": 113542,
+                "size": 722959,
                 "MD5": "1a011393f6d72e04c988ba18ed079225",
                 "url": "https://maven.neoforged.net/releases/io/github/llamalad7/mixinextras-neoforge/0.5.0/mixinextras-neoforge-0.5.0.jar",
                 "path": "io/github/llamalad7/mixinextras-neoforge/0.5.0/mixinextras-neoforge-0.5.0.jar"
