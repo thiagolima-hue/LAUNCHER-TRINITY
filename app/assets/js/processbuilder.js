@@ -81,21 +81,18 @@ class ProcessBuilder {
                 'net/neoforged/neoform/1.21.1-20240808.144430/neoform-1.21.1-20240808.144430.jar'
             ].map(p => path.join(this.libPath, p))
 
-            // CORREÇÃO CRÍTICA: Mover Minecraft (client.jar) para o MODULE PATH (-p)
-            // Agora que ele se chama 'client.jar', é um módulo válido e deve estar aqui para satisfazer --add-modules client
-            moduleJars.push(mcJarPath)
+            // MODIFICAÇÃO FINAL: client.jar volta para o Classpath para evitar erro de pacote "unnamed" na raiz
+            // O Java 21 proíbe Jars com arquivos na raiz (como fyn.class) de serem Módulos.
+            // A solução é: Classpath + --add-opens agressivo.
 
             jvmArgs.push('-p', moduleJars.join(cpSeparator))
-            jvmArgs.push('--add-modules', 'ALL-MODULE-PATH,client')
+            // 3. JPMS - PERMISSÕES E ACESSOS (ALL-SYSTEM STRATEGY)
+            jvmArgs.push('--add-modules', 'ALL-MODULE-PATH,ALL-SYSTEM')
 
-            // O NeoForge Universal, Loader e EarlyDisplay devem ficar no CLASSPATH 
-            // para que o Splash Screen consiga ler as classes do Minecraft.
-
-            // 3. JPMS - PERMISSÕES E ACESSOS (CLIENT MODULE STRATEGY)
             jvmArgs.push('--add-opens', 'java.base/java.util.jar=ALL-UNNAMED')
             jvmArgs.push('--add-opens', 'java.base/java.lang.invoke=ALL-UNNAMED')
+            jvmArgs.push('--add-opens', 'java.base/java.lang=ALL-UNNAMED')
 
-            jvmArgs.push('--add-reads', 'client=ALL-UNNAMED')
             jvmArgs.push('--add-exports', 'java.base/sun.security.util=ALL-UNNAMED')
             jvmArgs.push('--add-exports', 'jdk.naming.dns/com.sun.jndi.dns=java.naming')
 
@@ -221,8 +218,9 @@ class ProcessBuilder {
         const neoforgePath = path.join(this.libPath, 'net', 'neoforged', 'neoforge', neoforgeVersion, neoforgeJarName)
         neoLibraries.push(neoforgePath)
 
-        // REMOVIDO: mcJarPath agora está no Module Path (-p)
-        // Isso impede a duplicação no Classpath e resolve o erro de redeclaração de variável.
+        // CORREÇÃO FINAL: O client.jar volta para o Classpath
+        const mcJarPath = path.join(this.commonDir, 'versions', this.vanillaManifest.id, 'client.jar')
+        neoLibraries.push(mcJarPath)
 
         // CORREÇÃO: Remover duplicatas de todo o Classpath (Evita erro de Duplicate Key / GSON)
         const fullCpArray = cp.split(cpSeparator).concat(neoLibraries)
