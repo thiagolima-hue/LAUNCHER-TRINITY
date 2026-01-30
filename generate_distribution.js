@@ -67,6 +67,18 @@ async function generate() {
     // 3. Bibliotecas
     for (const lib of versionData.libraries) {
         if (lib.name.includes('minecraftforge')) continue;
+
+        let libUrl = lib.downloads.artifact.url;
+        let libPath = lib.downloads.artifact.path;
+        let libMD5 = "00000000000000000000000000000000";
+
+        // Caso especial: NeoForm (Mappings exigem .zip e link estável)
+        if (lib.name.includes('neoform')) {
+            libUrl = `https://raw.githubusercontent.com/thiagolima-hue/LAUNCHER-TRINITY/main/libraries/net/neoforged/neoform/1.21.1-20240808.144430/neoform-1.21.1-20240808.144430.zip`;
+            libPath = `net/neoforged/neoform/1.21.1-20240808.144430/neoform-1.21.1-20240808.144430.zip`;
+            libMD5 = "3F43262B8C492966BD170E4B78F313FE"; // MD5 real do ZIP local
+        }
+
         neoforgeModule.subModules.push({
             id: lib.name,
             name: lib.name.split(':')[1],
@@ -74,9 +86,9 @@ async function generate() {
             required: { value: true, def: true },
             artifact: {
                 size: lib.downloads.artifact.size,
-                MD5: "00000000000000000000000000000000",
-                url: lib.downloads.artifact.url,
-                path: lib.downloads.artifact.path
+                MD5: libMD5,
+                url: libUrl,
+                path: libPath
             }
         });
     }
@@ -88,13 +100,18 @@ async function generate() {
         const files = fs.readdirSync(modsDir).filter(f => f.endsWith('.jar'));
         for (const file of files) {
             const modId = file.replace('.jar', '').replace(/[^a-zA-Z0-9.-]/g, '_');
+            const isPixelmon = file.toLowerCase().includes('pixelmon');
+            const modUrl = isPixelmon
+                ? "https://www.dropbox.com/scl/fi/tn8w6izxlt8npwpo4gvcm/Pixelmon-1.21.1-9.3.14-universal.jar?rlkey=bj04frkfkmzviqqbcrdy9cwoc&st=fd6edy6c&dl=1"
+                : `https://raw.githubusercontent.com/thiagolima-hue/LAUNCHER-TRINITY/main/mods/${file}`;
+
             server.modules.push({
                 id: `local.mod:${modId}:1.0.0`,
                 name: file, type: "ForgeMod", required: { value: true, def: true },
                 artifact: {
                     size: fs.statSync(path.join(modsDir, file)).size,
                     MD5: crypto.createHash('md5').update(fs.readFileSync(path.join(modsDir, file))).digest('hex'),
-                    url: `https://raw.githubusercontent.com/thiagolima-hue/LAUNCHER-TRINITY/main/mods/${file}`,
+                    url: modUrl,
                     path: `mods/${file}`
                 }
             });
