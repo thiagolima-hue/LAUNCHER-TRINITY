@@ -81,8 +81,8 @@ class ProcessBuilder {
                 'net/neoforged/neoform/1.21.1-20240808.144430/neoform-1.21.1-20240808.144430.jar'
             ].map(p => path.join(this.libPath, p))
 
-            // Adiciona o JAR do Minecraft ao Module Path (CRÍTICO para o Trinity)
-            moduleJars.push(mcJarPath)
+            // REMOVIDO: O Minecraft JAR NUNCA deve ir no Module Path (Erro: Invalid module name '1')
+            // Ele será adicionado ao Classpath abaixo.
 
             jvmArgs.push('-p', moduleJars.join(cpSeparator))
             jvmArgs.push('--add-modules', 'ALL-MODULE-PATH')
@@ -218,6 +218,10 @@ class ProcessBuilder {
         const neoforgeJarName = `neoforge-${neoforgeVersion}-universal.jar`
         const neoforgePath = path.join(this.libPath, 'net', 'neoforged', 'neoforge', neoforgeVersion, neoforgeJarName)
         neoLibraries.push(neoforgePath)
+
+        // CORREÇÃO FINAL: Adicionar o Minecraft JAR explicitamente ao Classpath
+        // Isso resolve o 'Invalid module name' pois agora o jogo é carregado pelo Classpath, não pelo ModulePath
+        neoLibraries.push(mcJarPath)
 
         // CORREÇÃO: Remover duplicatas de todo o Classpath (Evita erro de Duplicate Key / GSON)
         const fullCpArray = cp.split(cpSeparator).concat(neoLibraries)
