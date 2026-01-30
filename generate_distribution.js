@@ -59,7 +59,7 @@ async function generate() {
         artifact: {
             size: fs.statSync(versionJsonPath).size,
             MD5: crypto.createHash('md5').update(fs.readFileSync(versionJsonPath)).digest('hex'),
-            url: `https://thiagolima-hue.github.io/LAUNCHER-TRINITY/versions/${manifestId}.json`,
+            url: `https://raw.githubusercontent.com/thiagolima-hue/LAUNCHER-TRINITY/main/versions/${manifestId}.json`,
             path: `${manifestId}.json`
         }
     });
@@ -94,7 +94,7 @@ async function generate() {
                 artifact: {
                     size: fs.statSync(path.join(modsDir, file)).size,
                     MD5: crypto.createHash('md5').update(fs.readFileSync(path.join(modsDir, file))).digest('hex'),
-                    url: `https://thiagolima-hue.github.io/LAUNCHER-TRINITY/mods/${file}`,
+                    url: `https://raw.githubusercontent.com/thiagolima-hue/LAUNCHER-TRINITY/main/mods/${file}`,
                     path: `mods/${file}`
                 }
             });
