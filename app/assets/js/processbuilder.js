@@ -40,7 +40,7 @@ class ProcessBuilder {
         if (this.usingNeoForge) {
             logger.info('Performing NeoForge 1.21.1 Official Manifest Sync...')
 
-            const mcJarPath = path.join(this.commonDir, 'versions', this.vanillaManifest.id, this.vanillaManifest.id + '.jar')
+            const mcJarPath = path.join(this.commonDir, 'versions', this.vanillaManifest.id, 'client.jar')
             const neoVersion = '21.1.219' // Versão fixa do JSON fornecido pelo usuário
 
             const mainClass = 'cpw.mods.bootstraplauncher.BootstrapLauncher'
@@ -85,18 +85,16 @@ class ProcessBuilder {
             // Ele será adicionado ao Classpath abaixo.
 
             jvmArgs.push('-p', moduleJars.join(cpSeparator))
-            jvmArgs.push('--add-modules', 'ALL-MODULE-PATH')
+            jvmArgs.push('--add-modules', 'ALL-MODULE-PATH,client')
 
             // O NeoForge Universal, Loader e EarlyDisplay devem ficar no CLASSPATH 
             // para que o Splash Screen consiga ler as classes do Minecraft.
 
-            // 3. JPMS - PERMISSÕES E ACESSOS (ALL-UNNAMED STRATEGY)
-            // Removemos add-reads especificos que estavam falhando e usamos a abordagem "Open Door"
+            // 3. JPMS - PERMISSÕES E ACESSOS (CLIENT MODULE STRATEGY)
             jvmArgs.push('--add-opens', 'java.base/java.util.jar=ALL-UNNAMED')
             jvmArgs.push('--add-opens', 'java.base/java.lang.invoke=ALL-UNNAMED')
-            jvmArgs.push('--add-opens', 'java.base/java.lang=ALL-UNNAMED')
-            jvmArgs.push('--add-opens', 'java.base/java.net=ALL-UNNAMED')
 
+            jvmArgs.push('--add-reads', 'client=ALL-UNNAMED')
             jvmArgs.push('--add-exports', 'java.base/sun.security.util=ALL-UNNAMED')
             jvmArgs.push('--add-exports', 'jdk.naming.dns/com.sun.jndi.dns=java.naming')
 
