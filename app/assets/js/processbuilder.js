@@ -78,7 +78,7 @@ class ProcessBuilder {
                 'org/ow2/asm/asm-tree/9.8/asm-tree-9.8.jar',
                 'org/ow2/asm/asm/9.8/asm-9.8.jar',
                 'net/neoforged/JarJarFileSystems/0.4.1/JarJarFileSystems-0.4.1.jar',
-                'net/neoforged/neoform/1.21.1-20240808.144430/neoform-1.21.1-20240808.144430.zip'
+                'net/neoforged/neoform/1.21.1-20240808.144430/neoform-1.21.1-20240808.144430.jar'
             ].map(p => path.join(this.libPath, p))
 
             // Adiciona o JAR do Minecraft ao Module Path (CRÍTICO para o Trinity)

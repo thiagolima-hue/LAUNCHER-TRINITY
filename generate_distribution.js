@@ -72,10 +72,11 @@ async function generate() {
         let libPath = lib.downloads.artifact.path;
         let libMD5 = "00000000000000000000000000000000";
 
-        // Caso especial: NeoForm (Mappings exigem .zip e link estável)
+        // Caso especial: NeoForm (Mappings exigem .zip e link estável, mas Java exige .jar)
         if (lib.name.includes('neoform')) {
             libUrl = `https://www.dropbox.com/scl/fi/6mf8tv93zt03ef67msvwz/neoform-1.21.1-20240808.144430.zip?rlkey=x8w8xyutc9my2fra6ybppfro8&st=wyad5ky8&dl=1`;
-            libPath = `net/neoforged/neoform/1.21.1-20240808.144430/neoform-1.21.1-20240808.144430.zip`;
+            // O PATH precisa salvar como .jar para o Java reconhecer como módulo
+            libPath = `net/neoforged/neoform/1.21.1-20240808.144430/neoform-1.21.1-20240808.144430.jar`;
             libMD5 = "3F43262B8C492966BD170E4B78F313FE"; // MD5 real do ZIP local
         }
 
