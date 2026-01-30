@@ -65,8 +65,9 @@ class ProcessBuilder {
             jvmArgs.push('-Dsplash=false')
             jvmArgs.push('-Dneoforge.main.serviceScan=true')
 
-            // 2. MODULE PATH (-p) - APENAS O NÚCLEO (Conforme JSON oficial)
+            // 2. MODULE PATH (-p) - APENAS O NÚCLEO (Conforme JSON oficial + Fix Trinity)
             // Estes são os únicos JARs que o NeoForge exige no Module Path para o boot
+            // AVISO: Adicionamos o NeoForm e o Minecraft JAR aqui para garantir visibilidade no boot layer
             const cpSeparator = ProcessBuilder.getClasspathSeparator()
             const moduleJars = [
                 'cpw/mods/bootstraplauncher/2.0.2/bootstraplauncher-2.0.2.jar',
@@ -76,8 +77,12 @@ class ProcessBuilder {
                 'org/ow2/asm/asm-analysis/9.8/asm-analysis-9.8.jar',
                 'org/ow2/asm/asm-tree/9.8/asm-tree-9.8.jar',
                 'org/ow2/asm/asm/9.8/asm-9.8.jar',
-                'net/neoforged/JarJarFileSystems/0.4.1/JarJarFileSystems-0.4.1.jar'
+                'net/neoforged/JarJarFileSystems/0.4.1/JarJarFileSystems-0.4.1.jar',
+                'net/neoforged/neoform/1.21.1-20240808.144430/neoform-1.21.1-20240808.144430.zip'
             ].map(p => path.join(this.libPath, p))
+
+            // Adiciona o JAR do Minecraft ao Module Path (CRÍTICO para o Trinity)
+            moduleJars.push(mcJarPath)
 
             jvmArgs.push('-p', moduleJars.join(cpSeparator))
             jvmArgs.push('--add-modules', 'ALL-MODULE-PATH')
