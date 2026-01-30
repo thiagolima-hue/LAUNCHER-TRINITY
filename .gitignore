@@ -6,13 +6,11 @@ build/
 .eslintignore
 .antigravityignore
 
-# Ignorar pastas de distribuição pesadas no código-fonte
-app/assets/mods/
-versions/
-mods/
-*.jar
+# Ignorar apenas arquivos executáveis e o Pixelmon pesado (que está na CurseForge)
 *.exe
+mods/Pixelmon-*.jar
 
-# Ignorar arquivos de sistema do Windows
-Thumbs.db
-Desktop.ini
+# Garantir que as pastas de distribuição SEJAM enviadas
+!versions/
+!mods/
+!index.html
