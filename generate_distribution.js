@@ -77,12 +77,29 @@ async function generate() {
         } else {
             // Geração de Caminho Maven Correta
             const parts = lib.name.split(':');
-            const group = parts[0].replace(/\./g, '/');
+            const group = parts[0];
             const artifact = parts[1];
             const version = parts[2];
 
-            libPath = `${group}/${artifact}/${version}/${artifact}-${version}.jar`;
-            libUrl = `https://maven.neoforged.net/releases/${libPath}`;
+            const groupPath = group.replace(/\./g, '/');
+            libPath = `${groupPath}/${artifact}/${version}/${artifact}-${version}.jar`;
+
+            // Roteamento Inteligente de Repositórios
+            const isNeoForgeLib = [
+                'net.neoforged',
+                'cpw.mods',
+                'com.electronwill',
+                'net.jodah',
+                'net.minecrell',
+                'net.fabricmc',
+                'org.ow2.asm'
+            ].some(prefix => group.startsWith(prefix));
+
+            if (isNeoForgeLib) {
+                libUrl = `https://maven.neoforged.net/releases/${libPath}`;
+            } else {
+                libUrl = `https://libraries.minecraft.net/${libPath}`;
+            }
         }
 
         // Caso especial: NeoForm (Dropbox)

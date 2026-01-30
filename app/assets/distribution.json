@@ -243,7 +243,7 @@
               "artifact": {
                 "size": 0,
                 "MD5": "00000000000000000000000000000000",
-                "url": "https://maven.neoforged.net/releases/org/apache/maven/maven-artifact/3.8.5/maven-artifact-3.8.5.jar",
+                "url": "https://libraries.minecraft.net/org/apache/maven/maven-artifact/3.8.5/maven-artifact-3.8.5.jar",
                 "path": "org/apache/maven/maven-artifact/3.8.5/maven-artifact-3.8.5.jar"
               }
             },
@@ -303,7 +303,7 @@
               "artifact": {
                 "size": 0,
                 "MD5": "00000000000000000000000000000000",
-                "url": "https://maven.neoforged.net/releases/org/openjdk/nashorn/nashorn-core/15.4/nashorn-core-15.4.jar",
+                "url": "https://libraries.minecraft.net/org/openjdk/nashorn/nashorn-core/15.4/nashorn-core-15.4.jar",
                 "path": "org/openjdk/nashorn/nashorn-core/15.4/nashorn-core-15.4.jar"
               }
             },
@@ -318,7 +318,7 @@
               "artifact": {
                 "size": 0,
                 "MD5": "00000000000000000000000000000000",
-                "url": "https://maven.neoforged.net/releases/org/apache/commons/commons-lang3/3.14.0/commons-lang3-3.14.0.jar",
+                "url": "https://libraries.minecraft.net/org/apache/commons/commons-lang3/3.14.0/commons-lang3-3.14.0.jar",
                 "path": "org/apache/commons/commons-lang3/3.14.0/commons-lang3-3.14.0.jar"
               }
             },
@@ -453,7 +453,7 @@
               "artifact": {
                 "size": 0,
                 "MD5": "00000000000000000000000000000000",
-                "url": "https://maven.neoforged.net/releases/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar",
+                "url": "https://libraries.minecraft.net/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar",
                 "path": "net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar"
               }
             },
@@ -468,7 +468,7 @@
               "artifact": {
                 "size": 0,
                 "MD5": "00000000000000000000000000000000",
-                "url": "https://maven.neoforged.net/releases/org/slf4j/slf4j-api/2.0.9/slf4j-api-2.0.9.jar",
+                "url": "https://libraries.minecraft.net/org/slf4j/slf4j-api/2.0.9/slf4j-api-2.0.9.jar",
                 "path": "org/slf4j/slf4j-api/2.0.9/slf4j-api-2.0.9.jar"
               }
             },
@@ -483,7 +483,7 @@
               "artifact": {
                 "size": 0,
                 "MD5": "00000000000000000000000000000000",
-                "url": "https://maven.neoforged.net/releases/org/antlr/antlr4-runtime/4.13.1/antlr4-runtime-4.13.1.jar",
+                "url": "https://libraries.minecraft.net/org/antlr/antlr4-runtime/4.13.1/antlr4-runtime-4.13.1.jar",
                 "path": "org/antlr/antlr4-runtime/4.13.1/antlr4-runtime-4.13.1.jar"
               }
             },
@@ -498,7 +498,7 @@
               "artifact": {
                 "size": 0,
                 "MD5": "00000000000000000000000000000000",
-                "url": "https://maven.neoforged.net/releases/com/mojang/logging/1.2.7/logging-1.2.7.jar",
+                "url": "https://libraries.minecraft.net/com/mojang/logging/1.2.7/logging-1.2.7.jar",
                 "path": "com/mojang/logging/1.2.7/logging-1.2.7.jar"
               }
             },
@@ -513,7 +513,7 @@
               "artifact": {
                 "size": 0,
                 "MD5": "00000000000000000000000000000000",
-                "url": "https://maven.neoforged.net/releases/org/apache/logging/log4j/log4j-slf4j2-impl/2.22.1/log4j-slf4j2-impl-2.22.1.jar",
+                "url": "https://libraries.minecraft.net/org/apache/logging/log4j/log4j-slf4j2-impl/2.22.1/log4j-slf4j2-impl-2.22.1.jar",
                 "path": "org/apache/logging/log4j/log4j-slf4j2-impl/2.22.1/log4j-slf4j2-impl-2.22.1.jar"
               }
             },
@@ -528,7 +528,7 @@
               "artifact": {
                 "size": 0,
                 "MD5": "00000000000000000000000000000000",
-                "url": "https://maven.neoforged.net/releases/org/apache/logging/log4j/log4j-core/2.22.1/log4j-core-2.22.1.jar",
+                "url": "https://libraries.minecraft.net/org/apache/logging/log4j/log4j-core/2.22.1/log4j-core-2.22.1.jar",
                 "path": "org/apache/logging/log4j/log4j-core/2.22.1/log4j-core-2.22.1.jar"
               }
             },
@@ -543,7 +543,7 @@
               "artifact": {
                 "size": 0,
                 "MD5": "00000000000000000000000000000000",
-                "url": "https://maven.neoforged.net/releases/org/apache/logging/log4j/log4j-api/2.22.1/log4j-api-2.22.1.jar",
+                "url": "https://libraries.minecraft.net/org/apache/logging/log4j/log4j-api/2.22.1/log4j-api-2.22.1.jar",
                 "path": "org/apache/logging/log4j/log4j-api/2.22.1/log4j-api-2.22.1.jar"
               }
             },
@@ -558,7 +558,7 @@
               "artifact": {
                 "size": 0,
                 "MD5": "00000000000000000000000000000000",
-                "url": "https://maven.neoforged.net/releases/org/jline/jline-reader/3.20.0/jline-reader-3.20.0.jar",
+                "url": "https://libraries.minecraft.net/org/jline/jline-reader/3.20.0/jline-reader-3.20.0.jar",
                 "path": "org/jline/jline-reader/3.20.0/jline-reader-3.20.0.jar"
               }
             },
@@ -573,7 +573,7 @@
               "artifact": {
                 "size": 0,
                 "MD5": "00000000000000000000000000000000",
-                "url": "https://maven.neoforged.net/releases/org/jline/jline-terminal/3.20.0/jline-terminal-3.20.0.jar",
+                "url": "https://libraries.minecraft.net/org/jline/jline-terminal/3.20.0/jline-terminal-3.20.0.jar",
                 "path": "org/jline/jline-terminal/3.20.0/jline-terminal-3.20.0.jar"
               }
             },
@@ -588,7 +588,7 @@
               "artifact": {
                 "size": 0,
                 "MD5": "00000000000000000000000000000000",
-                "url": "https://maven.neoforged.net/releases/commons-io/commons-io/2.15.1/commons-io-2.15.1.jar",
+                "url": "https://libraries.minecraft.net/commons-io/commons-io/2.15.1/commons-io-2.15.1.jar",
                 "path": "commons-io/commons-io/2.15.1/commons-io-2.15.1.jar"
               }
             },
@@ -603,7 +603,7 @@
               "artifact": {
                 "size": 0,
                 "MD5": "00000000000000000000000000000000",
-                "url": "https://maven.neoforged.net/releases/com/google/guava/guava/32.1.2-jre/guava-32.1.2-jre.jar",
+                "url": "https://libraries.minecraft.net/com/google/guava/guava/32.1.2-jre/guava-32.1.2-jre.jar",
                 "path": "com/google/guava/guava/32.1.2-jre/guava-32.1.2-jre.jar"
               }
             },
@@ -618,7 +618,7 @@
               "artifact": {
                 "size": 0,
                 "MD5": "00000000000000000000000000000000",
-                "url": "https://maven.neoforged.net/releases/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar",
+                "url": "https://libraries.minecraft.net/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar",
                 "path": "com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar"
               }
             },
@@ -633,7 +633,7 @@
               "artifact": {
                 "size": 0,
                 "MD5": "00000000000000000000000000000000",
-                "url": "https://maven.neoforged.net/releases/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar",
+                "url": "https://libraries.minecraft.net/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar",
                 "path": "com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar"
               }
             },
@@ -648,7 +648,7 @@
               "artifact": {
                 "size": 0,
                 "MD5": "00000000000000000000000000000000",
-                "url": "https://maven.neoforged.net/releases/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar",
+                "url": "https://libraries.minecraft.net/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar",
                 "path": "com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar"
               }
             },
@@ -663,7 +663,7 @@
               "artifact": {
                 "size": 0,
                 "MD5": "00000000000000000000000000000000",
-                "url": "https://maven.neoforged.net/releases/org/checkerframework/checker-qual/3.33.0/checker-qual-3.33.0.jar",
+                "url": "https://libraries.minecraft.net/org/checkerframework/checker-qual/3.33.0/checker-qual-3.33.0.jar",
                 "path": "org/checkerframework/checker-qual/3.33.0/checker-qual-3.33.0.jar"
               }
             },
@@ -678,7 +678,7 @@
               "artifact": {
                 "size": 0,
                 "MD5": "00000000000000000000000000000000",
-                "url": "https://maven.neoforged.net/releases/com/google/errorprone/error_prone_annotations/2.18.0/error_prone_annotations-2.18.0.jar",
+                "url": "https://libraries.minecraft.net/com/google/errorprone/error_prone_annotations/2.18.0/error_prone_annotations-2.18.0.jar",
                 "path": "com/google/errorprone/error_prone_annotations/2.18.0/error_prone_annotations-2.18.0.jar"
               }
             },
@@ -693,7 +693,7 @@
               "artifact": {
                 "size": 0,
                 "MD5": "00000000000000000000000000000000",
-                "url": "https://maven.neoforged.net/releases/com/google/j2objc/j2objc-annotations/2.8/j2objc-annotations-2.8.jar",
+                "url": "https://libraries.minecraft.net/com/google/j2objc/j2objc-annotations/2.8/j2objc-annotations-2.8.jar",
                 "path": "com/google/j2objc/j2objc-annotations/2.8/j2objc-annotations-2.8.jar"
               }
             },
@@ -708,7 +708,7 @@
               "artifact": {
                 "size": 0,
                 "MD5": "00000000000000000000000000000000",
-                "url": "https://maven.neoforged.net/releases/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar",
+                "url": "https://libraries.minecraft.net/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar",
                 "path": "com/google/code/gson/gson/2.10.1/gson-2.10.1.jar"
               }
             },
@@ -723,7 +723,7 @@
               "artifact": {
                 "size": 0,
                 "MD5": "00000000000000000000000000000000",
-                "url": "https://maven.neoforged.net/releases/org/codehaus/plexus/plexus-utils/3.3.0/plexus-utils-3.3.0.jar",
+                "url": "https://libraries.minecraft.net/org/codehaus/plexus/plexus-utils/3.3.0/plexus-utils-3.3.0.jar",
                 "path": "org/codehaus/plexus/plexus-utils/3.3.0/plexus-utils-3.3.0.jar"
               }
             },
@@ -738,7 +738,7 @@
               "artifact": {
                 "size": 0,
                 "MD5": "00000000000000000000000000000000",
-                "url": "https://maven.neoforged.net/releases/com/machinezoo/noexception/noexception/1.7.1/noexception-1.7.1.jar",
+                "url": "https://libraries.minecraft.net/com/machinezoo/noexception/noexception/1.7.1/noexception-1.7.1.jar",
                 "path": "com/machinezoo/noexception/noexception/1.7.1/noexception-1.7.1.jar"
               }
             },
