@@ -92,34 +92,49 @@ async function generate() {
                 path: libPath
             }
         });
+    });
+}
+
+// INJEÇÃO MANUAL: Minecraft Client Jar (Para garantir download com nome correto)
+neoforgeModule.subModules.push({
+    id: "minecraft-client-jar",
+    name: "Minecraft Client",
+    type: "Library",
+    required: { value: true, def: true },
+    artifact: {
+        size: 0, // Checagem de tamanho ignorada para este arquivo
+        MD5: "4f4bd402da16086208a13915152a55925a1f2677", // MD5 Oficial da Mojang
+        url: "https://piston-data.mojang.com/v1/objects/4f4bd402da16086208a13915152a55925a1f2677/client.jar",
+        path: "../versions/1.21.1/client.jar"
     }
+});
 
-    server.modules.push(neoforgeModule);
+server.modules.push(neoforgeModule);
 
-    // 4. Mods
-    if (fs.existsSync(modsDir)) {
-        const files = fs.readdirSync(modsDir).filter(f => f.endsWith('.jar'));
-        for (const file of files) {
-            const modId = file.replace('.jar', '').replace(/[^a-zA-Z0-9.-]/g, '_');
-            const isPixelmon = file.toLowerCase().includes('pixelmon');
-            const modUrl = isPixelmon
-                ? "https://www.dropbox.com/scl/fi/tn8w6izxlt8npwpo4gvcm/Pixelmon-1.21.1-9.3.14-universal.jar?rlkey=bj04frkfkmzviqqbcrdy9cwoc&st=fd6edy6c&dl=1"
-                : `https://raw.githubusercontent.com/thiagolima-hue/LAUNCHER-TRINITY/main/mods/${file}`;
+// 4. Mods
+if (fs.existsSync(modsDir)) {
+    const files = fs.readdirSync(modsDir).filter(f => f.endsWith('.jar'));
+    for (const file of files) {
+        const modId = file.replace('.jar', '').replace(/[^a-zA-Z0-9.-]/g, '_');
+        const isPixelmon = file.toLowerCase().includes('pixelmon');
+        const modUrl = isPixelmon
+            ? "https://www.dropbox.com/scl/fi/tn8w6izxlt8npwpo4gvcm/Pixelmon-1.21.1-9.3.14-universal.jar?rlkey=bj04frkfkmzviqqbcrdy9cwoc&st=fd6edy6c&dl=1"
+            : `https://raw.githubusercontent.com/thiagolima-hue/LAUNCHER-TRINITY/main/mods/${file}`;
 
-            server.modules.push({
-                id: `local.mod:${modId}:1.0.0`,
-                name: file, type: "ForgeMod", required: { value: true, def: true },
-                artifact: {
-                    size: fs.statSync(path.join(modsDir, file)).size,
-                    MD5: crypto.createHash('md5').update(fs.readFileSync(path.join(modsDir, file))).digest('hex'),
-                    url: modUrl,
-                    path: `mods/${file}`
-                }
-            });
-        }
+        server.modules.push({
+            id: `local.mod:${modId}:1.0.0`,
+            name: file, type: "ForgeMod", required: { value: true, def: true },
+            artifact: {
+                size: fs.statSync(path.join(modsDir, file)).size,
+                MD5: crypto.createHash('md5').update(fs.readFileSync(path.join(modsDir, file))).digest('hex'),
+                url: modUrl,
+                path: `mods/${file}`
+            }
+        });
     }
+}
 
-    fs.writeFileSync(outputFile, JSON.stringify({ version: "1.0.0", servers: [server] }, null, 2));
-    console.log('NeoForge distribution with VersionManifest saved.');
+fs.writeFileSync(outputFile, JSON.stringify({ version: "1.0.0", servers: [server] }, null, 2));
+console.log('NeoForge distribution with VersionManifest saved.');
 }
 generate();
