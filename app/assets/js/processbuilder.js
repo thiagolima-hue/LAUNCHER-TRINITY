@@ -92,6 +92,7 @@ class ProcessBuilder {
             jvmArgs.push('--add-opens', 'java.base/java.util.jar=ALL-UNNAMED')
             jvmArgs.push('--add-opens', 'java.base/java.lang.invoke=ALL-UNNAMED')
             jvmArgs.push('--add-opens', 'java.base/java.lang=ALL-UNNAMED')
+            jvmArgs.push('--add-opens', 'java.base/java.net=ALL-UNNAMED')
 
             jvmArgs.push('--add-exports', 'java.base/sun.security.util=ALL-UNNAMED')
             jvmArgs.push('--add-exports', 'jdk.naming.dns/com.sun.jndi.dns=java.naming')
