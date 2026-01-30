@@ -31,7 +31,7 @@ async function generate() {
         minecraftVersion: "1.21.1",
         mainServer: true,
         autoconnect: false,
-        javaOptions: { suggestedMajor: 21, supported: ">=21" },
+        javaOptions: { suggestedMajor: 21, supported: ">=21", jvmArgs: ["-Dforceloaderpath=true"] },
         modules: []
     };
 

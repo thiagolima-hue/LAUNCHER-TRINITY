@@ -16,7 +16,10 @@
       "autoconnect": false,
       "javaOptions": {
         "suggestedMajor": 21,
-        "supported": ">=21"
+        "supported": ">=21",
+        "jvmArgs": [
+          "-Dforceloaderpath=true"
+        ]
       },
       "modules": [
         {
