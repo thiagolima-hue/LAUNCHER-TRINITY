@@ -43,8 +43,8 @@
                 "def": true
               },
               "artifact": {
-                "size": 22096,
-                "MD5": "621527e2c8f58e97e7270c176c3bcab9",
+                "size": 22072,
+                "MD5": "5dff4ad57db72f236824bcd9253a0250",
                 "url": "https://raw.githubusercontent.com/thiagolima-hue/LAUNCHER-TRINITY/main/versions/neoforge-21.1.219.json",
                 "path": "neoforge-21.1.219.json"
               }
@@ -750,7 +750,7 @@
               "artifact": {
                 "size": 526715,
                 "MD5": "3F43262B8C492966BD170E4B78F313FE",
-                "url": "https://raw.githubusercontent.com/thiagolima-hue/LAUNCHER-TRINITY/main/libraries/net/neoforged/neoform/1.21.1-20240808.144430/neoform-1.21.1-20240808.144430.zip",
+                "url": "https://www.dropbox.com/scl/fi/6mf8tv93zt03ef67msvwz/neoform-1.21.1-20240808.144430.zip?rlkey=x8w8xyutc9my2fra6ybppfro8&st=wyad5ky8&dl=1",
                 "path": "net/neoforged/neoform/1.21.1-20240808.144430/neoform-1.21.1-20240808.144430.zip"
               }
             },
