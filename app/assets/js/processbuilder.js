@@ -90,17 +90,15 @@ class ProcessBuilder {
             // O NeoForge Universal, Loader e EarlyDisplay devem ficar no CLASSPATH 
             // para que o Splash Screen consiga ler as classes do Minecraft.
 
-            // 3. JPMS - PERMISSÕES E ACESSOS (Conforme JSON oficial)
-            jvmArgs.push('--add-opens', 'java.base/java.util.jar=cpw.mods.securejarhandler')
-            jvmArgs.push('--add-opens', 'java.base/java.lang.invoke=cpw.mods.securejarhandler')
+            // 3. JPMS - PERMISSÕES E ACESSOS (ALL-UNNAMED STRATEGY)
+            // Removemos add-reads especificos que estavam falhando e usamos a abordagem "Open Door"
+            jvmArgs.push('--add-opens', 'java.base/java.util.jar=ALL-UNNAMED')
+            jvmArgs.push('--add-opens', 'java.base/java.lang.invoke=ALL-UNNAMED')
             jvmArgs.push('--add-opens', 'java.base/java.lang=ALL-UNNAMED')
-            jvmArgs.push('--add-exports', 'java.base/sun.security.util=cpw.mods.securejarhandler')
-            jvmArgs.push('--add-exports', 'jdk.naming.dns/com.sun.jndi.dns=java.naming')
+            jvmArgs.push('--add-opens', 'java.base/java.net=ALL-UNNAMED')
 
-            // CORREÇÃO: "Ponte" para permitir que o NeoForge (Módulo) leia o Minecraft (Classpath)
-            // Usando nomes curtos de módulos que o Java 21 reconhece (fml_loader e modlauncher)
-            jvmArgs.push('--add-reads', 'fml_loader=ALL-UNNAMED')
-            jvmArgs.push('--add-reads', 'modlauncher=ALL-UNNAMED')
+            jvmArgs.push('--add-exports', 'java.base/sun.security.util=ALL-UNNAMED')
+            jvmArgs.push('--add-exports', 'jdk.naming.dns/com.sun.jndi.dns=java.naming')
 
             // Flags de Suporte Helios e Identificação do Minecraft
             jvmArgs.push(`-Dbootstraplauncher.gamePath=${mcJarPath}`)
