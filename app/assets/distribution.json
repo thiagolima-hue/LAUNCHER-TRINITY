@@ -78,8 +78,8 @@
               "artifact": {
                 "size": 0,
                 "MD5": "00000000000000000000000000000000",
-                "url": "https://maven.neoforged.net/releases/net/neoforged/fancymodloader/loader/4/0/42",
-                "path": "net/neoforged/fancymodloader/loader/4/0/42.jar"
+                "url": "https://maven.neoforged.net/releases/net/neoforged/fancymodloader/loader/4.0.42/loader-4.0.42.jar",
+                "path": "net/neoforged/fancymodloader/loader/4.0.42/loader-4.0.42.jar"
               }
             },
             {
@@ -93,8 +93,8 @@
               "artifact": {
                 "size": 0,
                 "MD5": "00000000000000000000000000000000",
-                "url": "https://maven.neoforged.net/releases/net/neoforged/accesstransformers/at-modlauncher/10/0/1",
-                "path": "net/neoforged/accesstransformers/at-modlauncher/10/0/1.jar"
+                "url": "https://maven.neoforged.net/releases/net/neoforged/accesstransformers/at-modlauncher/10.0.1/at-modlauncher-10.0.1.jar",
+                "path": "net/neoforged/accesstransformers/at-modlauncher/10.0.1/at-modlauncher-10.0.1.jar"
               }
             },
             {
@@ -108,8 +108,8 @@
               "artifact": {
                 "size": 0,
                 "MD5": "00000000000000000000000000000000",
-                "url": "https://maven.neoforged.net/releases/net/neoforged/accesstransformers/10/0/1",
-                "path": "net/neoforged/accesstransformers/10/0/1.jar"
+                "url": "https://maven.neoforged.net/releases/net/neoforged/accesstransformers/10.0.1/accesstransformers-10.0.1.jar",
+                "path": "net/neoforged/accesstransformers/10.0.1/accesstransformers-10.0.1.jar"
               }
             },
             {
@@ -123,8 +123,8 @@
               "artifact": {
                 "size": 0,
                 "MD5": "00000000000000000000000000000000",
-                "url": "https://maven.neoforged.net/releases/net/neoforged/bus/8/0/5",
-                "path": "net/neoforged/bus/8/0/5.jar"
+                "url": "https://maven.neoforged.net/releases/net/neoforged/bus/8.0.5/bus-8.0.5.jar",
+                "path": "net/neoforged/bus/8.0.5/bus-8.0.5.jar"
               }
             },
             {
@@ -138,8 +138,8 @@
               "artifact": {
                 "size": 0,
                 "MD5": "00000000000000000000000000000000",
-                "url": "https://maven.neoforged.net/releases/net/neoforged/coremods/7/0/3",
-                "path": "net/neoforged/coremods/7/0/3.jar"
+                "url": "https://maven.neoforged.net/releases/net/neoforged/coremods/7.0.3/coremods-7.0.3.jar",
+                "path": "net/neoforged/coremods/7.0.3/coremods-7.0.3.jar"
               }
             },
             {
@@ -153,8 +153,8 @@
               "artifact": {
                 "size": 0,
                 "MD5": "00000000000000000000000000000000",
-                "url": "https://maven.neoforged.net/releases/cpw/mods/modlauncher/11/0/5",
-                "path": "cpw/mods/modlauncher/11/0/5.jar"
+                "url": "https://maven.neoforged.net/releases/cpw/mods/modlauncher/11.0.5/modlauncher-11.0.5.jar",
+                "path": "cpw/mods/modlauncher/11.0.5/modlauncher-11.0.5.jar"
               }
             },
             {
@@ -168,8 +168,8 @@
               "artifact": {
                 "size": 0,
                 "MD5": "00000000000000000000000000000000",
-                "url": "https://maven.neoforged.net/releases/net/neoforged/mergetool/2/0/0/api",
-                "path": "net/neoforged/mergetool/2/0/0/api.jar"
+                "url": "https://maven.neoforged.net/releases/net/neoforged/mergetool/2.0.0/mergetool-2.0.0.jar",
+                "path": "net/neoforged/mergetool/2.0.0/mergetool-2.0.0.jar"
               }
             },
             {
@@ -183,8 +183,8 @@
               "artifact": {
                 "size": 0,
                 "MD5": "00000000000000000000000000000000",
-                "url": "https://maven.neoforged.net/releases/com/electronwill/night-config/toml/3/8/3",
-                "path": "com/electronwill/night-config/toml/3/8/3.jar"
+                "url": "https://maven.neoforged.net/releases/com/electronwill/night-config/toml/3.8.3/toml-3.8.3.jar",
+                "path": "com/electronwill/night-config/toml/3.8.3/toml-3.8.3.jar"
               }
             },
             {
@@ -198,8 +198,8 @@
               "artifact": {
                 "size": 0,
                 "MD5": "00000000000000000000000000000000",
-                "url": "https://maven.neoforged.net/releases/com/electronwill/night-config/core/3/8/3",
-                "path": "com/electronwill/night-config/core/3/8/3.jar"
+                "url": "https://maven.neoforged.net/releases/com/electronwill/night-config/core/3.8.3/core-3.8.3.jar",
+                "path": "com/electronwill/night-config/core/3.8.3/core-3.8.3.jar"
               }
             },
             {
@@ -213,8 +213,8 @@
               "artifact": {
                 "size": 0,
                 "MD5": "00000000000000000000000000000000",
-                "url": "https://maven.neoforged.net/releases/net/neoforged/JarJarSelector/0/4/1",
-                "path": "net/neoforged/JarJarSelector/0/4/1.jar"
+                "url": "https://maven.neoforged.net/releases/net/neoforged/JarJarSelector/0.4.1/JarJarSelector-0.4.1.jar",
+                "path": "net/neoforged/JarJarSelector/0.4.1/JarJarSelector-0.4.1.jar"
               }
             },
             {
@@ -228,8 +228,8 @@
               "artifact": {
                 "size": 0,
                 "MD5": "00000000000000000000000000000000",
-                "url": "https://maven.neoforged.net/releases/net/neoforged/JarJarMetadata/0/4/1",
-                "path": "net/neoforged/JarJarMetadata/0/4/1.jar"
+                "url": "https://maven.neoforged.net/releases/net/neoforged/JarJarMetadata/0.4.1/JarJarMetadata-0.4.1.jar",
+                "path": "net/neoforged/JarJarMetadata/0.4.1/JarJarMetadata-0.4.1.jar"
               }
             },
             {
@@ -243,8 +243,8 @@
               "artifact": {
                 "size": 0,
                 "MD5": "00000000000000000000000000000000",
-                "url": "https://maven.neoforged.net/releases/org/apache/maven/maven-artifact/3/8/5",
-                "path": "org/apache/maven/maven-artifact/3/8/5.jar"
+                "url": "https://maven.neoforged.net/releases/org/apache/maven/maven-artifact/3.8.5/maven-artifact-3.8.5.jar",
+                "path": "org/apache/maven/maven-artifact/3.8.5/maven-artifact-3.8.5.jar"
               }
             },
             {
@@ -258,8 +258,8 @@
               "artifact": {
                 "size": 0,
                 "MD5": "00000000000000000000000000000000",
-                "url": "https://maven.neoforged.net/releases/net/jodah/typetools/0/6/3",
-                "path": "net/jodah/typetools/0/6/3.jar"
+                "url": "https://maven.neoforged.net/releases/net/jodah/typetools/0.6.3/typetools-0.6.3.jar",
+                "path": "net/jodah/typetools/0.6.3/typetools-0.6.3.jar"
               }
             },
             {
@@ -273,8 +273,8 @@
               "artifact": {
                 "size": 0,
                 "MD5": "00000000000000000000000000000000",
-                "url": "https://maven.neoforged.net/releases/net/minecrell/terminalconsoleappender/1/3/0",
-                "path": "net/minecrell/terminalconsoleappender/1/3/0.jar"
+                "url": "https://maven.neoforged.net/releases/net/minecrell/terminalconsoleappender/1.3.0/terminalconsoleappender-1.3.0.jar",
+                "path": "net/minecrell/terminalconsoleappender/1.3.0/terminalconsoleappender-1.3.0.jar"
               }
             },
             {
@@ -288,8 +288,8 @@
               "artifact": {
                 "size": 0,
                 "MD5": "00000000000000000000000000000000",
-                "url": "https://maven.neoforged.net/releases/net/fabricmc/sponge-mixin/0/15/2+mixin/0/8/7",
-                "path": "net/fabricmc/sponge-mixin/0/15/2+mixin/0/8/7.jar"
+                "url": "https://maven.neoforged.net/releases/net/fabricmc/sponge-mixin/0.15.2+mixin.0.8.7/sponge-mixin-0.15.2+mixin.0.8.7.jar",
+                "path": "net/fabricmc/sponge-mixin/0.15.2+mixin.0.8.7/sponge-mixin-0.15.2+mixin.0.8.7.jar"
               }
             },
             {
@@ -303,8 +303,8 @@
               "artifact": {
                 "size": 0,
                 "MD5": "00000000000000000000000000000000",
-                "url": "https://maven.neoforged.net/releases/org/openjdk/nashorn/nashorn-core/15/4",
-                "path": "org/openjdk/nashorn/nashorn-core/15/4.jar"
+                "url": "https://maven.neoforged.net/releases/org/openjdk/nashorn/nashorn-core/15.4/nashorn-core-15.4.jar",
+                "path": "org/openjdk/nashorn/nashorn-core/15.4/nashorn-core-15.4.jar"
               }
             },
             {
@@ -318,8 +318,8 @@
               "artifact": {
                 "size": 0,
                 "MD5": "00000000000000000000000000000000",
-                "url": "https://maven.neoforged.net/releases/org/apache/commons/commons-lang3/3/14/0",
-                "path": "org/apache/commons/commons-lang3/3/14/0.jar"
+                "url": "https://maven.neoforged.net/releases/org/apache/commons/commons-lang3/3.14.0/commons-lang3-3.14.0.jar",
+                "path": "org/apache/commons/commons-lang3/3.14.0/commons-lang3-3.14.0.jar"
               }
             },
             {
@@ -333,8 +333,8 @@
               "artifact": {
                 "size": 0,
                 "MD5": "00000000000000000000000000000000",
-                "url": "https://maven.neoforged.net/releases/cpw/mods/bootstraplauncher/2/0/2",
-                "path": "cpw/mods/bootstraplauncher/2/0/2.jar"
+                "url": "https://maven.neoforged.net/releases/cpw/mods/bootstraplauncher/2.0.2/bootstraplauncher-2.0.2.jar",
+                "path": "cpw/mods/bootstraplauncher/2.0.2/bootstraplauncher-2.0.2.jar"
               }
             },
             {
@@ -348,8 +348,8 @@
               "artifact": {
                 "size": 0,
                 "MD5": "00000000000000000000000000000000",
-                "url": "https://maven.neoforged.net/releases/cpw/mods/securejarhandler/3/0/8",
-                "path": "cpw/mods/securejarhandler/3/0/8.jar"
+                "url": "https://maven.neoforged.net/releases/cpw/mods/securejarhandler/3.0.8/securejarhandler-3.0.8.jar",
+                "path": "cpw/mods/securejarhandler/3.0.8/securejarhandler-3.0.8.jar"
               }
             },
             {
@@ -363,8 +363,8 @@
               "artifact": {
                 "size": 0,
                 "MD5": "00000000000000000000000000000000",
-                "url": "https://maven.neoforged.net/releases/org/ow2/asm/asm-commons/9/8",
-                "path": "org/ow2/asm/asm-commons/9/8.jar"
+                "url": "https://maven.neoforged.net/releases/org/ow2/asm/asm-commons/9.8/asm-commons-9.8.jar",
+                "path": "org/ow2/asm/asm-commons/9.8/asm-commons-9.8.jar"
               }
             },
             {
@@ -378,8 +378,8 @@
               "artifact": {
                 "size": 0,
                 "MD5": "00000000000000000000000000000000",
-                "url": "https://maven.neoforged.net/releases/org/ow2/asm/asm-util/9/8",
-                "path": "org/ow2/asm/asm-util/9/8.jar"
+                "url": "https://maven.neoforged.net/releases/org/ow2/asm/asm-util/9.8/asm-util-9.8.jar",
+                "path": "org/ow2/asm/asm-util/9.8/asm-util-9.8.jar"
               }
             },
             {
@@ -393,8 +393,8 @@
               "artifact": {
                 "size": 0,
                 "MD5": "00000000000000000000000000000000",
-                "url": "https://maven.neoforged.net/releases/org/ow2/asm/asm-analysis/9/8",
-                "path": "org/ow2/asm/asm-analysis/9/8.jar"
+                "url": "https://maven.neoforged.net/releases/org/ow2/asm/asm-analysis/9.8/asm-analysis-9.8.jar",
+                "path": "org/ow2/asm/asm-analysis/9.8/asm-analysis-9.8.jar"
               }
             },
             {
@@ -408,8 +408,8 @@
               "artifact": {
                 "size": 0,
                 "MD5": "00000000000000000000000000000000",
-                "url": "https://maven.neoforged.net/releases/org/ow2/asm/asm-tree/9/8",
-                "path": "org/ow2/asm/asm-tree/9/8.jar"
+                "url": "https://maven.neoforged.net/releases/org/ow2/asm/asm-tree/9.8/asm-tree-9.8.jar",
+                "path": "org/ow2/asm/asm-tree/9.8/asm-tree-9.8.jar"
               }
             },
             {
@@ -423,8 +423,8 @@
               "artifact": {
                 "size": 0,
                 "MD5": "00000000000000000000000000000000",
-                "url": "https://maven.neoforged.net/releases/org/ow2/asm/asm/9/8",
-                "path": "org/ow2/asm/asm/9/8.jar"
+                "url": "https://maven.neoforged.net/releases/org/ow2/asm/asm/9.8/asm-9.8.jar",
+                "path": "org/ow2/asm/asm/9.8/asm-9.8.jar"
               }
             },
             {
@@ -438,8 +438,8 @@
               "artifact": {
                 "size": 0,
                 "MD5": "00000000000000000000000000000000",
-                "url": "https://maven.neoforged.net/releases/net/neoforged/JarJarFileSystems/0/4/1",
-                "path": "net/neoforged/JarJarFileSystems/0/4/1.jar"
+                "url": "https://maven.neoforged.net/releases/net/neoforged/JarJarFileSystems/0.4.1/JarJarFileSystems-0.4.1.jar",
+                "path": "net/neoforged/JarJarFileSystems/0.4.1/JarJarFileSystems-0.4.1.jar"
               }
             },
             {
@@ -453,8 +453,8 @@
               "artifact": {
                 "size": 0,
                 "MD5": "00000000000000000000000000000000",
-                "url": "https://maven.neoforged.net/releases/net/sf/jopt-simple/jopt-simple/5/0/4",
-                "path": "net/sf/jopt-simple/jopt-simple/5/0/4.jar"
+                "url": "https://maven.neoforged.net/releases/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar",
+                "path": "net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar"
               }
             },
             {
@@ -468,8 +468,8 @@
               "artifact": {
                 "size": 0,
                 "MD5": "00000000000000000000000000000000",
-                "url": "https://maven.neoforged.net/releases/org/slf4j/slf4j-api/2/0/9",
-                "path": "org/slf4j/slf4j-api/2/0/9.jar"
+                "url": "https://maven.neoforged.net/releases/org/slf4j/slf4j-api/2.0.9/slf4j-api-2.0.9.jar",
+                "path": "org/slf4j/slf4j-api/2.0.9/slf4j-api-2.0.9.jar"
               }
             },
             {
@@ -483,8 +483,8 @@
               "artifact": {
                 "size": 0,
                 "MD5": "00000000000000000000000000000000",
-                "url": "https://maven.neoforged.net/releases/org/antlr/antlr4-runtime/4/13/1",
-                "path": "org/antlr/antlr4-runtime/4/13/1.jar"
+                "url": "https://maven.neoforged.net/releases/org/antlr/antlr4-runtime/4.13.1/antlr4-runtime-4.13.1.jar",
+                "path": "org/antlr/antlr4-runtime/4.13.1/antlr4-runtime-4.13.1.jar"
               }
             },
             {
@@ -498,8 +498,8 @@
               "artifact": {
                 "size": 0,
                 "MD5": "00000000000000000000000000000000",
-                "url": "https://maven.neoforged.net/releases/com/mojang/logging/1/2/7",
-                "path": "com/mojang/logging/1/2/7.jar"
+                "url": "https://maven.neoforged.net/releases/com/mojang/logging/1.2.7/logging-1.2.7.jar",
+                "path": "com/mojang/logging/1.2.7/logging-1.2.7.jar"
               }
             },
             {
@@ -513,8 +513,8 @@
               "artifact": {
                 "size": 0,
                 "MD5": "00000000000000000000000000000000",
-                "url": "https://maven.neoforged.net/releases/org/apache/logging/log4j/log4j-slf4j2-impl/2/22/1",
-                "path": "org/apache/logging/log4j/log4j-slf4j2-impl/2/22/1.jar"
+                "url": "https://maven.neoforged.net/releases/org/apache/logging/log4j/log4j-slf4j2-impl/2.22.1/log4j-slf4j2-impl-2.22.1.jar",
+                "path": "org/apache/logging/log4j/log4j-slf4j2-impl/2.22.1/log4j-slf4j2-impl-2.22.1.jar"
               }
             },
             {
@@ -528,8 +528,8 @@
               "artifact": {
                 "size": 0,
                 "MD5": "00000000000000000000000000000000",
-                "url": "https://maven.neoforged.net/releases/org/apache/logging/log4j/log4j-core/2/22/1",
-                "path": "org/apache/logging/log4j/log4j-core/2/22/1.jar"
+                "url": "https://maven.neoforged.net/releases/org/apache/logging/log4j/log4j-core/2.22.1/log4j-core-2.22.1.jar",
+                "path": "org/apache/logging/log4j/log4j-core/2.22.1/log4j-core-2.22.1.jar"
               }
             },
             {
@@ -543,8 +543,8 @@
               "artifact": {
                 "size": 0,
                 "MD5": "00000000000000000000000000000000",
-                "url": "https://maven.neoforged.net/releases/org/apache/logging/log4j/log4j-api/2/22/1",
-                "path": "org/apache/logging/log4j/log4j-api/2/22/1.jar"
+                "url": "https://maven.neoforged.net/releases/org/apache/logging/log4j/log4j-api/2.22.1/log4j-api-2.22.1.jar",
+                "path": "org/apache/logging/log4j/log4j-api/2.22.1/log4j-api-2.22.1.jar"
               }
             },
             {
@@ -558,8 +558,8 @@
               "artifact": {
                 "size": 0,
                 "MD5": "00000000000000000000000000000000",
-                "url": "https://maven.neoforged.net/releases/org/jline/jline-reader/3/20/0",
-                "path": "org/jline/jline-reader/3/20/0.jar"
+                "url": "https://maven.neoforged.net/releases/org/jline/jline-reader/3.20.0/jline-reader-3.20.0.jar",
+                "path": "org/jline/jline-reader/3.20.0/jline-reader-3.20.0.jar"
               }
             },
             {
@@ -573,8 +573,8 @@
               "artifact": {
                 "size": 0,
                 "MD5": "00000000000000000000000000000000",
-                "url": "https://maven.neoforged.net/releases/org/jline/jline-terminal/3/20/0",
-                "path": "org/jline/jline-terminal/3/20/0.jar"
+                "url": "https://maven.neoforged.net/releases/org/jline/jline-terminal/3.20.0/jline-terminal-3.20.0.jar",
+                "path": "org/jline/jline-terminal/3.20.0/jline-terminal-3.20.0.jar"
               }
             },
             {
@@ -588,8 +588,8 @@
               "artifact": {
                 "size": 0,
                 "MD5": "00000000000000000000000000000000",
-                "url": "https://maven.neoforged.net/releases/commons-io/commons-io/2/15/1",
-                "path": "commons-io/commons-io/2/15/1.jar"
+                "url": "https://maven.neoforged.net/releases/commons-io/commons-io/2.15.1/commons-io-2.15.1.jar",
+                "path": "commons-io/commons-io/2.15.1/commons-io-2.15.1.jar"
               }
             },
             {
@@ -603,8 +603,8 @@
               "artifact": {
                 "size": 0,
                 "MD5": "00000000000000000000000000000000",
-                "url": "https://maven.neoforged.net/releases/com/google/guava/guava/32/1/2-jre",
-                "path": "com/google/guava/guava/32/1/2-jre.jar"
+                "url": "https://maven.neoforged.net/releases/com/google/guava/guava/32.1.2-jre/guava-32.1.2-jre.jar",
+                "path": "com/google/guava/guava/32.1.2-jre/guava-32.1.2-jre.jar"
               }
             },
             {
@@ -618,8 +618,8 @@
               "artifact": {
                 "size": 0,
                 "MD5": "00000000000000000000000000000000",
-                "url": "https://maven.neoforged.net/releases/com/google/guava/failureaccess/1/0/1",
-                "path": "com/google/guava/failureaccess/1/0/1.jar"
+                "url": "https://maven.neoforged.net/releases/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar",
+                "path": "com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar"
               }
             },
             {
@@ -633,8 +633,8 @@
               "artifact": {
                 "size": 0,
                 "MD5": "00000000000000000000000000000000",
-                "url": "https://maven.neoforged.net/releases/com/google/guava/listenablefuture/9999/0-empty-to-avoid-conflict-with-guava",
-                "path": "com/google/guava/listenablefuture/9999/0-empty-to-avoid-conflict-with-guava.jar"
+                "url": "https://maven.neoforged.net/releases/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar",
+                "path": "com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar"
               }
             },
             {
@@ -648,8 +648,8 @@
               "artifact": {
                 "size": 0,
                 "MD5": "00000000000000000000000000000000",
-                "url": "https://maven.neoforged.net/releases/com/google/code/findbugs/jsr305/3/0/2",
-                "path": "com/google/code/findbugs/jsr305/3/0/2.jar"
+                "url": "https://maven.neoforged.net/releases/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar",
+                "path": "com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar"
               }
             },
             {
@@ -663,8 +663,8 @@
               "artifact": {
                 "size": 0,
                 "MD5": "00000000000000000000000000000000",
-                "url": "https://maven.neoforged.net/releases/org/checkerframework/checker-qual/3/33/0",
-                "path": "org/checkerframework/checker-qual/3/33/0.jar"
+                "url": "https://maven.neoforged.net/releases/org/checkerframework/checker-qual/3.33.0/checker-qual-3.33.0.jar",
+                "path": "org/checkerframework/checker-qual/3.33.0/checker-qual-3.33.0.jar"
               }
             },
             {
@@ -678,8 +678,8 @@
               "artifact": {
                 "size": 0,
                 "MD5": "00000000000000000000000000000000",
-                "url": "https://maven.neoforged.net/releases/com/google/errorprone/error_prone_annotations/2/18/0",
-                "path": "com/google/errorprone/error_prone_annotations/2/18/0.jar"
+                "url": "https://maven.neoforged.net/releases/com/google/errorprone/error_prone_annotations/2.18.0/error_prone_annotations-2.18.0.jar",
+                "path": "com/google/errorprone/error_prone_annotations/2.18.0/error_prone_annotations-2.18.0.jar"
               }
             },
             {
@@ -693,8 +693,8 @@
               "artifact": {
                 "size": 0,
                 "MD5": "00000000000000000000000000000000",
-                "url": "https://maven.neoforged.net/releases/com/google/j2objc/j2objc-annotations/2/8",
-                "path": "com/google/j2objc/j2objc-annotations/2/8.jar"
+                "url": "https://maven.neoforged.net/releases/com/google/j2objc/j2objc-annotations/2.8/j2objc-annotations-2.8.jar",
+                "path": "com/google/j2objc/j2objc-annotations/2.8/j2objc-annotations-2.8.jar"
               }
             },
             {
@@ -708,8 +708,8 @@
               "artifact": {
                 "size": 0,
                 "MD5": "00000000000000000000000000000000",
-                "url": "https://maven.neoforged.net/releases/com/google/code/gson/gson/2/10/1",
-                "path": "com/google/code/gson/gson/2/10/1.jar"
+                "url": "https://maven.neoforged.net/releases/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar",
+                "path": "com/google/code/gson/gson/2.10.1/gson-2.10.1.jar"
               }
             },
             {
@@ -723,8 +723,8 @@
               "artifact": {
                 "size": 0,
                 "MD5": "00000000000000000000000000000000",
-                "url": "https://maven.neoforged.net/releases/org/codehaus/plexus/plexus-utils/3/3/0",
-                "path": "org/codehaus/plexus/plexus-utils/3/3/0.jar"
+                "url": "https://maven.neoforged.net/releases/org/codehaus/plexus/plexus-utils/3.3.0/plexus-utils-3.3.0.jar",
+                "path": "org/codehaus/plexus/plexus-utils/3.3.0/plexus-utils-3.3.0.jar"
               }
             },
             {
@@ -738,8 +738,8 @@
               "artifact": {
                 "size": 0,
                 "MD5": "00000000000000000000000000000000",
-                "url": "https://maven.neoforged.net/releases/com/machinezoo/noexception/noexception/1/7/1",
-                "path": "com/machinezoo/noexception/noexception/1/7/1.jar"
+                "url": "https://maven.neoforged.net/releases/com/machinezoo/noexception/noexception/1.7.1/noexception-1.7.1.jar",
+                "path": "com/machinezoo/noexception/noexception/1.7.1/noexception-1.7.1.jar"
               }
             },
             {

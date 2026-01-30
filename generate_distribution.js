@@ -68,21 +68,28 @@ async function generate() {
     for (const lib of versionData.libraries) {
         if (lib.name.includes('minecraftforge')) continue;
 
-        let libUrl = lib.downloads ? lib.downloads.artifact.url : `https://maven.neoforged.net/releases/${lib.name.replace(/:/g, '/').replace(/\./g, '/')}`;
-        let libPath = lib.downloads ? lib.downloads.artifact.path : `${lib.name.replace(/:/g, '/').replace(/\./g, '/')}.jar`;
+        let libUrl, libPath;
         let libMD5 = "00000000000000000000000000000000";
 
-        // Caso especial: NeoForm
+        if (lib.downloads && lib.downloads.artifact) {
+            libUrl = lib.downloads.artifact.url;
+            libPath = lib.downloads.artifact.path;
+        } else {
+            // Geração de Caminho Maven Correta
+            const parts = lib.name.split(':');
+            const group = parts[0].replace(/\./g, '/');
+            const artifact = parts[1];
+            const version = parts[2];
+
+            libPath = `${group}/${artifact}/${version}/${artifact}-${version}.jar`;
+            libUrl = `https://maven.neoforged.net/releases/${libPath}`;
+        }
+
+        // Caso especial: NeoForm (Dropbox)
         if (lib.name.includes('neoform')) {
             libUrl = `https://www.dropbox.com/scl/fi/6mf8tv93zt03ef67msvwz/neoform-1.21.1-20240808.144430.zip?rlkey=x8w8xyutc9my2fra6ybppfro8&st=wyad5ky8&dl=1`;
             libPath = `net/neoforged/neoform/1.21.1-20240808.144430/neoform-1.21.1-20240808.144430.jar`;
             libMD5 = "3f43262b8c492966bd170e4b78f313fe";
-        }
-
-        // Caso especial: EarlyDisplay (Erro 404 no Maven Automático)
-        if (lib.name.includes('earlydisplay')) {
-            libUrl = "https://maven.neoforged.net/releases/net/neoforged/fancymodloader/earlydisplay/4.0.42/earlydisplay-4.0.42.jar";
-            libPath = "net/neoforged/fancymodloader/earlydisplay/4.0.42/earlydisplay-4.0.42.jar";
         }
 
         neoforgeModule.subModules.push({
