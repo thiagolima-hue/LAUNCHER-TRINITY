@@ -220,7 +220,7 @@ class ProcessBuilder {
         neoLibraries.push(neoforgePath)
 
         // CORREÇÃO FINAL: Adicionar o Minecraft JAR explicitamente ao Classpath
-        // Isso resolve o 'Invalid module name' pois agora o jogo é carregado pelo Classpath, não pelo ModulePath
+        const mcJarPath = path.join(this.commonDir, 'versions', this.vanillaManifest.id, this.vanillaManifest.id + '.jar')
         neoLibraries.push(mcJarPath)
 
         // CORREÇÃO: Remover duplicatas de todo o Classpath (Evita erro de Duplicate Key / GSON)
