@@ -40,10 +40,19 @@ class ProcessBuilder {
             // Permissões e Identidade
             jvmArgs.push('-DignoreList=client-extra,client.jar', '-Dproduction=true', '-Dforceloaderpath=true')
             jvmArgs.push('--add-modules', 'ALL-MODULE-PATH,ALL-SYSTEM')
+
+            // Permissões específicas para SecureJarHandler (Java 21)
+            jvmArgs.push('--add-opens', 'java.base/java.util.jar=cpw.mods.securejarhandler')
+            jvmArgs.push('--add-opens', 'java.base/java.lang.invoke=cpw.mods.securejarhandler')
+            jvmArgs.push('--add-opens', 'java.base/java.lang=cpw.mods.securejarhandler')
+
+            // Permissões gerais para o Classpath (ALL-UNNAMED)
             jvmArgs.push('--add-opens', 'java.base/java.util.jar=ALL-UNNAMED')
             jvmArgs.push('--add-opens', 'java.base/java.lang.invoke=ALL-UNNAMED')
             jvmArgs.push('--add-opens', 'java.base/java.lang=ALL-UNNAMED')
             jvmArgs.push('--add-opens', 'java.base/java.net=ALL-UNNAMED')
+
+            jvmArgs.push('--add-exports', 'java.base/sun.security.util=cpw.mods.securejarhandler')
             jvmArgs.push('--add-exports', 'java.base/sun.security.util=ALL-UNNAMED')
             jvmArgs.push('--add-exports', 'jdk.naming.dns/com.sun.jndi.dns=java.naming')
 
