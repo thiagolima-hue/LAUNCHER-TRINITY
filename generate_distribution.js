@@ -79,6 +79,12 @@ async function generate() {
             libMD5 = "3f43262b8c492966bd170e4b78f313fe";
         }
 
+        // Caso especial: EarlyDisplay (Erro 404 no Maven Automático)
+        if (lib.name.includes('earlydisplay')) {
+            libUrl = "https://maven.neoforged.net/releases/net/neoforged/fancymodloader/earlydisplay/4.0.42/earlydisplay-4.0.42.jar";
+            libPath = "net/neoforged/fancymodloader/earlydisplay/4.0.42/earlydisplay-4.0.42.jar";
+        }
+
         neoforgeModule.subModules.push({
             id: lib.name,
             name: lib.name.split(':')[1],
