@@ -65,9 +65,26 @@ class ProcessBuilder {
             jvmArgs.push('-Dsplash=false')
             jvmArgs.push('-Dneoforge.main.serviceScan=true')
 
-            // 2. MODULE PATH (-p) - APENAS O NÚCLEO (Conforme JSON oficial + Fix Trinity)
-            // Estes são os únicos JARs que o NeoForge exige no Module Path para o boot
-            // AVISO: Adicionamos o NeoForm e o Minecraft JAR aqui para garantir visibilidade no boot layer
+            // 1. JVM FLAGS - CRITICAL ORDER FOR JAVA 21
+            // As flags, add-opens e system properties devem vir ANTES do -p e do -jar
+
+            // System Properties e Debug
+            jvmArgs.push('-Dproduction=true')
+            jvmArgs.push('-Dnet.neoforged.fml.loading.moddiscovery.exploder.enabled=true')
+            jvmArgs.push('-Dforge.logging.console.level=debug')
+
+            // Permissions (Aggressive Open-Door Policy)
+            jvmArgs.push('--add-modules', 'ALL-MODULE-PATH,ALL-SYSTEM')
+            jvmArgs.push('--add-opens', 'java.base/java.util.jar=ALL-UNNAMED')
+            jvmArgs.push('--add-opens', 'java.base/java.lang.invoke=ALL-UNNAMED')
+            jvmArgs.push('--add-opens', 'java.base/java.lang=ALL-UNNAMED')
+            jvmArgs.push('--add-opens', 'java.base/java.net=ALL-UNNAMED')
+            jvmArgs.push('--add-opens', 'java.base/jdk.internal.loader=ALL-UNNAMED')
+            jvmArgs.push('--add-opens', 'java.base/jdk.internal.module=ALL-UNNAMED')
+            jvmArgs.push('--add-exports', 'java.base/sun.security.util=ALL-UNNAMED')
+            jvmArgs.push('--add-exports', 'jdk.naming.dns/com.sun.jndi.dns=java.naming')
+
+            // 2. MODULE PATH (-p)
             const cpSeparator = ProcessBuilder.getClasspathSeparator()
             const moduleJars = [
                 'cpw/mods/bootstraplauncher/2.0.2/bootstraplauncher-2.0.2.jar',
@@ -86,16 +103,6 @@ class ProcessBuilder {
             // A solução é: Classpath + --add-opens agressivo.
 
             jvmArgs.push('-p', moduleJars.join(cpSeparator))
-            // 3. JPMS - PERMISSÕES E ACESSOS (ALL-SYSTEM STRATEGY)
-            jvmArgs.push('--add-modules', 'ALL-MODULE-PATH,ALL-SYSTEM')
-
-            jvmArgs.push('--add-opens', 'java.base/java.util.jar=ALL-UNNAMED')
-            jvmArgs.push('--add-opens', 'java.base/java.lang.invoke=ALL-UNNAMED')
-            jvmArgs.push('--add-opens', 'java.base/java.lang=ALL-UNNAMED')
-            jvmArgs.push('--add-opens', 'java.base/java.net=ALL-UNNAMED')
-
-            jvmArgs.push('--add-exports', 'java.base/sun.security.util=ALL-UNNAMED')
-            jvmArgs.push('--add-exports', 'jdk.naming.dns/com.sun.jndi.dns=java.naming')
 
             // Flags de Suporte Helios e Identificação do Minecraft
             jvmArgs.push(`-Dbootstraplauncher.gamePath=${mcJarPath}`)
