@@ -223,7 +223,8 @@ class ProcessBuilder {
         neoLibraries.push(neoforgePath)
 
         // CORREÇÃO FINAL: Adicionar o Minecraft JAR explicitamente ao Classpath
-        const mcJarPath = path.join(this.commonDir, 'versions', this.vanillaManifest.id, this.vanillaManifest.id + '.jar')
+        // MANOBRA CLIENT: NeoForge 1.21.1 exige que o JAR se chame 'client.jar' para o merge correto
+        const mcJarPath = path.join(this.commonDir, 'versions', this.vanillaManifest.id, 'client.jar')
         neoLibraries.push(mcJarPath)
 
         // CORREÇÃO: Remover duplicatas de todo o Classpath (Evita erro de Duplicate Key / GSON)
