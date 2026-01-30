@@ -81,8 +81,9 @@ class ProcessBuilder {
                 'net/neoforged/neoform/1.21.1-20240808.144430/neoform-1.21.1-20240808.144430.jar'
             ].map(p => path.join(this.libPath, p))
 
-            // REMOVIDO: O Minecraft JAR NUNCA deve ir no Module Path (Erro: Invalid module name '1')
-            // Ele será adicionado ao Classpath abaixo.
+            // CORREÇÃO CRÍTICA: Mover Minecraft (client.jar) para o MODULE PATH (-p)
+            // Agora que ele se chama 'client.jar', é um módulo válido e deve estar aqui para satisfazer --add-modules client
+            moduleJars.push(mcJarPath)
 
             jvmArgs.push('-p', moduleJars.join(cpSeparator))
             jvmArgs.push('--add-modules', 'ALL-MODULE-PATH,client')
@@ -220,10 +221,8 @@ class ProcessBuilder {
         const neoforgePath = path.join(this.libPath, 'net', 'neoforged', 'neoforge', neoforgeVersion, neoforgeJarName)
         neoLibraries.push(neoforgePath)
 
-        // CORREÇÃO FINAL: Adicionar o Minecraft JAR explicitamente ao Classpath
-        // MANOBRA CLIENT: NeoForge 1.21.1 exige que o JAR se chame 'client.jar' para o merge correto
-        const mcJarPath = path.join(this.commonDir, 'versions', this.vanillaManifest.id, 'client.jar')
-        neoLibraries.push(mcJarPath)
+        // REMOVIDO: mcJarPath agora está no Module Path (-p)
+        // Isso impede a duplicação no Classpath e resolve o erro de redeclaração de variável.
 
         // CORREÇÃO: Remover duplicatas de todo o Classpath (Evita erro de Duplicate Key / GSON)
         const fullCpArray = cp.split(cpSeparator).concat(neoLibraries)
