@@ -243,7 +243,7 @@
               "artifact": {
                 "size": 0,
                 "MD5": "00000000000000000000000000000000",
-                "url": "https://libraries.minecraft.net/org/apache/maven/maven-artifact/3.8.5/maven-artifact-3.8.5.jar",
+                "url": "https://maven.neoforged.net/releases/org/apache/maven/maven-artifact/3.8.5/maven-artifact-3.8.5.jar",
                 "path": "org/apache/maven/maven-artifact/3.8.5/maven-artifact-3.8.5.jar"
               }
             },
@@ -318,7 +318,7 @@
               "artifact": {
                 "size": 0,
                 "MD5": "00000000000000000000000000000000",
-                "url": "https://libraries.minecraft.net/org/apache/commons/commons-lang3/3.14.0/commons-lang3-3.14.0.jar",
+                "url": "https://maven.neoforged.net/releases/org/apache/commons/commons-lang3/3.14.0/commons-lang3-3.14.0.jar",
                 "path": "org/apache/commons/commons-lang3/3.14.0/commons-lang3-3.14.0.jar"
               }
             },
@@ -513,7 +513,7 @@
               "artifact": {
                 "size": 0,
                 "MD5": "00000000000000000000000000000000",
-                "url": "https://libraries.minecraft.net/org/apache/logging/log4j/log4j-slf4j2-impl/2.22.1/log4j-slf4j2-impl-2.22.1.jar",
+                "url": "https://maven.neoforged.net/releases/org/apache/logging/log4j/log4j-slf4j2-impl/2.22.1/log4j-slf4j2-impl-2.22.1.jar",
                 "path": "org/apache/logging/log4j/log4j-slf4j2-impl/2.22.1/log4j-slf4j2-impl-2.22.1.jar"
               }
             },
@@ -528,7 +528,7 @@
               "artifact": {
                 "size": 0,
                 "MD5": "00000000000000000000000000000000",
-                "url": "https://libraries.minecraft.net/org/apache/logging/log4j/log4j-core/2.22.1/log4j-core-2.22.1.jar",
+                "url": "https://maven.neoforged.net/releases/org/apache/logging/log4j/log4j-core/2.22.1/log4j-core-2.22.1.jar",
                 "path": "org/apache/logging/log4j/log4j-core/2.22.1/log4j-core-2.22.1.jar"
               }
             },
@@ -543,7 +543,7 @@
               "artifact": {
                 "size": 0,
                 "MD5": "00000000000000000000000000000000",
-                "url": "https://libraries.minecraft.net/org/apache/logging/log4j/log4j-api/2.22.1/log4j-api-2.22.1.jar",
+                "url": "https://maven.neoforged.net/releases/org/apache/logging/log4j/log4j-api/2.22.1/log4j-api-2.22.1.jar",
                 "path": "org/apache/logging/log4j/log4j-api/2.22.1/log4j-api-2.22.1.jar"
               }
             },
@@ -558,7 +558,7 @@
               "artifact": {
                 "size": 0,
                 "MD5": "00000000000000000000000000000000",
-                "url": "https://libraries.minecraft.net/org/jline/jline-reader/3.20.0/jline-reader-3.20.0.jar",
+                "url": "https://maven.neoforged.net/releases/org/jline/jline-reader/3.20.0/jline-reader-3.20.0.jar",
                 "path": "org/jline/jline-reader/3.20.0/jline-reader-3.20.0.jar"
               }
             },
@@ -573,7 +573,7 @@
               "artifact": {
                 "size": 0,
                 "MD5": "00000000000000000000000000000000",
-                "url": "https://libraries.minecraft.net/org/jline/jline-terminal/3.20.0/jline-terminal-3.20.0.jar",
+                "url": "https://maven.neoforged.net/releases/org/jline/jline-terminal/3.20.0/jline-terminal-3.20.0.jar",
                 "path": "org/jline/jline-terminal/3.20.0/jline-terminal-3.20.0.jar"
               }
             },
@@ -723,7 +723,7 @@
               "artifact": {
                 "size": 0,
                 "MD5": "00000000000000000000000000000000",
-                "url": "https://libraries.minecraft.net/org/codehaus/plexus/plexus-utils/3.3.0/plexus-utils-3.3.0.jar",
+                "url": "https://maven.neoforged.net/releases/org/codehaus/plexus/plexus-utils/3.3.0/plexus-utils-3.3.0.jar",
                 "path": "org/codehaus/plexus/plexus-utils/3.3.0/plexus-utils-3.3.0.jar"
               }
             },

@@ -92,7 +92,10 @@ async function generate() {
                 'net.jodah',
                 'net.minecrell',
                 'net.fabricmc',
-                'org.ow2.asm'
+                'org.ow2.asm',
+                'org.apache',
+                'org.codehaus',
+                'org.jline'
             ].some(prefix => group.startsWith(prefix));
 
             if (isNeoForgeLib) {
